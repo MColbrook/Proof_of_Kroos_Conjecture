@@ -1,23 +1,48 @@
-# Homogeneous polynomial approximation on symmetric convex bodies
+# A proof of Kroó’s conjecture
 
-Lean proofs of the thirteen principal results of Matthew J. Colbrook's manuscript on Kroó's conjecture. The development uses actual multivariate polynomials and inverse Fourier integrals, with the full uniform quantifiers in the statements.
+Lean 4 formalization of the principal results of Matthew J. Colbrook's *Homogeneous polynomial approximation on symmetric convex bodies: a proof of Kroó’s conjecture*.
 
-For every origin-symmetric convex body $K\subset\mathbb R^d$ with nonempty interior and every $f\in C(\partial K;\mathbb R)$, the error of approximation by homogeneous polynomials of consecutive degrees $n,n+1$ tends to zero as $n\to\infty$. Even and odd functions admit approximation along their respective parities. Approximation of the constant function is uniform over all such bodies in a fixed dimension.
+## Main result
 
-The analytic construction produces homogeneous polynomials with a common Gaussian profile and polynomially weighted uniform errors. The development also proves small-bandwidth weighted density, Gaussian Fourier cutoff, convex weighted approximation, finite-family selection and positive spherical quadrature. See [the mathematical account and result map](docs/RESULTS.md).
+Let $K\subset\mathbb R^d$ be an origin-symmetric convex body with nonempty interior, and let $H_n^d$ denote the real homogeneous polynomials of degree $n$. For every continuous real function $f$ on $\partial K$,
 
-## Read the statements
+$$
+\lim_{n\to\infty}\inf_{p\in H_n^d+H_{n+1}^d}\|f-p\|_{C(\partial K)}=0.
+$$
 
-- [Challenge.lean](Challenge.lean) is the self-contained statement of record. It imports only Mathlib and includes every definition needed to interpret the thirteen results.
-- [Solution.lean](Solution.lean) proves the same fourteen declarations: the thirteen results and their conjunction.
-- [Bandlimited/](Bandlimited/) contains the analytic, geometric and algebraic proof development. [Bandlimited.lean](Bandlimited.lean) is its library entry point.
-- [AxiomReport.lean](AxiomReport.lean) prints the axiom dependencies of every compared declaration. [NumericalBounds.lean](NumericalBounds.lean) proves the numerical bounds by exact arithmetic and analytic inequalities.
+Even functions admit approximation in every sufficiently large even degree, and odd functions in every sufficiently large odd degree. Approximation of the constant function by degree-$2n$ homogeneous polynomials is uniform over all such bodies in each fixed dimension. No smoothness or curvature assumptions are imposed on the boundary.
 
-The fourteen deliberate `sorry` placeholders in Challenge are specifications for Comparator. Neither Solution nor the proof library imports Challenge. There are no proof holes or custom axioms supporting the Solution. The permitted axioms are exactly `propext`, `Classical.choice` and `Quot.sound`; native-execution trust is excluded.
+Earlier results established the planar case ([Benko–Kroó](https://doi.org/10.1090/S0002-9947-08-04625-4) and [Varjú](https://doi.org/10.1007/s00365-006-0639-2)), polytopes (Varjú), and regular convex bodies ([Kroó–Szabados](https://acta.hu/download.phtml?id=3045)). [Kroó's 2023 survey](https://drna.padovauniversitypress.it/2023/1/1) states the general conjecture as Problem 1. The result addresses this problem for arbitrary symmetric convex bodies and is relevant to multivariate approximation theory and convex geometry.
 
-## Build
+## Formalized results
 
-Install [elan](https://github.com/leanprover/elan) and Git, then run from this directory:
+The submission contains thirteen principal results, named `VerifiedPaper.t01` through `VerifiedPaper.t13`, and their conjunction `VerifiedPaper.all_principal`.
+
+| Declarations | Mathematical content |
+|---|---|
+| `t01`–`t02` | Approximation of the constant function on each body, and uniformly over norms with fixed equivalence bounds |
+| `t03`–`t05` | Approximation at consecutive degrees, and the even and odd cases |
+| `t06` | A degree threshold uniform over all symmetric convex bodies in a fixed dimension |
+| `t07` | Homogeneous Gaussian approximation with polynomially weighted uniform errors |
+| `t08`–`t09` | Small-bandwidth density with one-sided exponential weights, and tensor-product density |
+| `t10` | Gaussian Fourier cutoff in polynomially weighted uniform norms |
+| `t11`–`t12` | Gaussian approximation with convex weights, and finite-family selection for Lipschitz classes |
+| `t13` | Positive spherical quadrature and uniform Gaussian and tail estimates |
+
+The statements use actual multivariate polynomials, the topological boundary, and inverse Fourier integrals, with the full uniform quantifiers. Some proofs use alternative arguments and coarser sufficient constants. The weighted approximation consequence obtained by homogenization in the manuscript is outside the submitted formalization. The [result map](docs/RESULTS.md) gives the exact statements and the [scope notes](docs/VERIFICATION_SCOPE.md) describe the correspondence in detail.
+
+## Reading the proof
+
+- [Challenge.lean](Challenge.lean) is the independent statement of record. It imports only Mathlib and defines the objects needed to read all thirteen results.
+- [Solution.lean](Solution.lean) proves the corresponding declarations using the library in [Bandlimited/](Bandlimited/).
+- [Bandlimited/PrincipalResults.lean](Bandlimited/PrincipalResults.lean) collects the main library theorems; [Bandlimited.lean](Bandlimited.lean) is the library entry point.
+- [AxiomReport.lean](AxiomReport.lean) reports the proof dependencies, and [NumericalBounds.lean](NumericalBounds.lean) checks the numerical estimates.
+
+Challenge's fourteen deliberate `sorry` placeholders specify the statements for Comparator. Solution and the proof library are independent of Challenge and contain no proof holes. The allowed axioms are `propext`, `Classical.choice`, and `Quot.sound`.
+
+## Building and checking
+
+Install [elan](https://github.com/leanprover/elan), Git, and Python 3.11 or later. From the repository root, run:
 
 ```sh
 lake exe cache get
@@ -26,38 +51,24 @@ lake env lean AxiomReport.lean
 python3 scripts/audit.py
 ```
 
-The project pins Lean **4.35.0-rc3** and Mathlib commit **b63f6e8a68d220e3b3bc4f3792bb53650d375f24**. The committed `lake-manifest.json` pins every transitive Git dependency. Use Python 3.11 or later. On Windows, `python` may replace `python3`.
+The project uses Lean **4.35.0-rc3**. Mathlib and all transitive dependencies are pinned in [lakefile.toml](lakefile.toml) and [lake-manifest.json](lake-manifest.json). On Windows, use `python` in place of `python3` if appropriate.
 
-## Comparator and independent kernels
-
-On Linux, with `bubblewrap` installed and usable:
+For the complete repository verification on Linux, install `bubblewrap` and run:
 
 ```sh
 bash scripts/verify.sh
 ```
 
-This script performs the source audit and build, prints axiom reports, and invokes the bundled Lean Comparator with Lean, NanoDa and con-ron. It fails rather than silently disabling the operating-system sandbox. The GitHub Actions workflow performs the same checks on Linux. It has not been run on GitHub before this repository is uploaded.
+This audits the package, builds the project, prints axiom reports, and runs Comparator with Lean, NanoDa, and con-ron, keeping the operating-system sandbox enabled. The [Verify formalization workflow](.github/workflows/verify.yml) runs these checks on GitHub. The recorded local replay and reproduction details are in [docs/CHECKING.md](docs/CHECKING.md).
 
-Windows can build and inspect axioms; the public verification script requires Linux for the sandboxed Comparator step. The separately documented local Windows replay uses read-only pinned dependency caches and explicitly disables the unavailable OS sandbox. Its result is not a production Palomar acceptance. See [checking commands, output and limits](docs/CHECKING.md).
+## Palomar
 
-## Scope and source fidelity
+The registry title is **A proof of Kroó’s conjecture**. The submission uses [comparator.json](comparator.json), with the project at the repository root and metadata in [formalization.yaml](formalization.yaml).
 
-The source correspondence is fixed to the manuscript snapshot with SHA-256 `70890207abc8b2e842d3bde78e1e834d7c7471ee447c7cfa907a809f71a55a91`. The manuscript itself is not distributed in this repository. Later editorial changes and the subsequently added weighted approximation consequence are outside this recorded comparison. Editing the paper does not silently update the formal claim.
+Once the repository is public, run the manual [Palomar preflight workflow](.github/workflows/palomar-preflight.yml) for the intended commit. It calls Palomar's full mechanical verifier. Follow the [submission instructions](docs/PALOMAR.md), then use the [Palomar submission form](https://submit.palomar-registry.org/). Registration follows Palomar's verification and review process.
 
-All thirteen principal conclusions are preserved. Several proofs use alternative arguments and coarser sufficient constants; this is not a line-by-line certification of every auxiliary assertion in the manuscript. The [81-item inventory](docs/CLAIM_INVENTORY.md), [exact scope matrix](docs/VERIFICATION_SCOPE.md), and [source provenance](docs/SOURCE.md) make these distinctions explicit.
+## Authorship and licence
 
-Proof checking establishes the stated Lean propositions and their axiom dependencies. Source fidelity and mathematical interpretation require separate review. [Review records](docs/REVIEWS.md) identify the AI reviews and their limits; no independent human peer review is claimed.
+Mathematical author and responsible maintainer: **Matthew J. Colbrook**, University of Cambridge. The Lean development and documentation were prepared with substantial OpenAI Codex assistance. The [production account](docs/AI_ASSISTANCE.md) and [review records](docs/REVIEWS.md) describe that work and the AI reviews; no independent human peer review is claimed.
 
-## Palomar submission
-
-The root layout follows the [current Palomar submission standard](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md), checked on 24 October 2026. The metadata is in [formalization.yaml](formalization.yaml), expressed as JSON-compatible YAML, and the single selected Comparator configuration is [comparator.json](comparator.json).
-
-After uploading and committing this folder as the root of a public GitHub repository, use the [Palomar submission form](https://submit.palomar-registry.org/) with its `owner/name`, the exact full 40-character commit SHA, and the repository-relative configuration path `comparator.json`. The project directory is the repository root; the metadata path is `formalization.yaml`. Recheck Palomar's policy when submitting. Registration still requires Palomar's mechanical and editorial review. See [the submission notes](docs/PALOMAR.md).
-
-No Git repository, commit, remote, push or Palomar submission was created during preparation.
-
-## Authorship and reuse
-
-Mathematical author and responsible maintainer: **Matthew J. Colbrook**, University of Cambridge. The Lean development and documentation were prepared with substantial OpenAI Codex assistance, including separately identified AI reviews. See [the production account](docs/AI_ASSISTANCE.md).
-
-New repository sources are provided under **Apache-2.0**. Mathlib, Lean and the checking tools retain their own licences and attribution. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [proof reuse](docs/REUSE.md). Cited papers and the separately maintained manuscript are not relicensed by this repository.
+Repository sources are licensed under **Apache-2.0**. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [proof reuse](docs/REUSE.md). Dependencies retain their own licences. The manuscript is maintained separately and is not included in the repository.

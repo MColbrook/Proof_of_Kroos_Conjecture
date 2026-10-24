@@ -67,4 +67,4 @@ The Challenge is below the 1,000-line/100-KiB hard limits but exceeds the prefer
 
 The fourteen roots are T01--T13 and their conjunction. They certify the exact Lean statements, with at most `propext`, `Classical.choice` and `Quot.sound`. They do not certify all unused intermediate sentences in a particular manuscript proof, historical claims, bibliographical completeness, later manuscript edits, or the subsequently added weighted approximation consequence. See [RESULTS.md](RESULTS.md), [VERIFICATION_SCOPE.md](VERIFICATION_SCOPE.md) and the independent AI statement review.
 
-The GitHub workflow is prepared but has not run on a hosted runner before upload. No public repository, immutable project commit or Palomar submission exists yet.
+Current hosted results are available in [GitHub Actions](https://github.com/MColbrook/Proof_of_Kroos_Conjecture/actions). Before submission, run the separate full **Palomar preflight** workflow for the exact intended commit; [PALOMAR.md](PALOMAR.md) gives the steps. The recorded local replay above is distinct from those hosted runs and from Palomar registration.

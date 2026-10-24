@@ -15,9 +15,9 @@ These records apply to the cleaned repository, including its new self-contained 
 - `dependency-and-tool-audit.json`: all nine authenticated dependency revisions, clean working-tree checks and installed checking-binary hashes.
 - `script-checks.json`: protected configuration generation, Bash failure propagation and PowerShell syntax checks.
 - `metadata-schema-validation.json`: validation against the recorded official upstream v0.4 schema; the local validator and its limits are identified.
-- `submission-input-hashes.json`: fingerprints of current Lean sources and submission configuration/licence files.
+- `submission-input-hashes.json`: fingerprints of the Lean sources and submission configuration/licence files at the recorded local replay. The registry title in the current metadata has since been updated; the Lean sources and compared statements are unchanged.
 - `package-audit.txt`: source-package and metadata-profile audit output.
 
 Local absolute directory prefixes are replaced by descriptive placeholders in published command/log displays. Mathematical inputs, declaration names, values, output and exit codes are unchanged. Raw local logs and large proof exports remain outside this source package.
 
-Windows does not provide the required Linux namespaces. The successful local comparison explicitly disabled that OS sandbox, and its warning is retained verbatim. The public Linux workflow keeps the sandbox enabled and has not yet been executed on GitHub. Neither these files nor AI reviews constitute Palomar acceptance or human peer review.
+Windows does not provide the required Linux namespaces. The successful local comparison explicitly disabled that OS sandbox, and its warning is retained verbatim. The Linux workflow keeps the sandbox enabled; current hosted results are available in [GitHub Actions](https://github.com/MColbrook/Proof_of_Kroos_Conjecture/actions). Neither these files nor AI reviews constitute Palomar acceptance or human peer review.
