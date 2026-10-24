@@ -1,0 +1,16 @@
+[
+  {
+    "check": "exact Python heredoc generates valid protected Comparator JSON with all fourteen roots and both independent kernels",
+    "exitCode": 0
+  },
+  {
+    "check": "Bash verification pipeline stops after a failing check",
+    "exitCode": 0,
+    "expectedInnerExitCode": 1
+  },
+  {
+    "check": "PowerShell verification wrapper parses successfully",
+    "exitCode": 0,
+    "output": "PowerShell syntax passed."
+  }
+]

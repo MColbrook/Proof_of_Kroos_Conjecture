@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the mathematical manuscript and this formalization when using the result."
+type: software
+title: "Homogeneous polynomial approximation on symmetric convex bodies: Lean formalization"
+authors:
+  - family-names: Colbrook
+    given-names: Matthew J.
+version: 0.1.0
+license: Apache-2.0
+abstract: "Lean proofs of the thirteen principal homogeneous polynomial approximation results, with an independent Challenge/Solution comparison and explicit provenance and scope."

@@ -1,0 +1,13 @@
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\NumericalBounds.olean NumericalBounds.lean
+'Bandlimited.Numerics.exp_one_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_times_chart_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.taylor_geometric_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_times_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.log_two_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.inv_thirty_two_exp_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.inv_sixty_four_exp_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.taylor_log_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.hyperplane_log_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0

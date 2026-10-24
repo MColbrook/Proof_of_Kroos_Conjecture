@@ -1,0 +1,16 @@
+COMMAND: lean.exe --version
+Lean (version 4.35.0-rc3, x86_64-w64-windows-gnu, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)
+
+EXIT CODE: 0
+
+
+COMMAND: lake.exe --version
+Lake version 5.0.0-src+470d5ce (Lean version 4.35.0-rc3)
+
+EXIT CODE: 0
+
+
+COMMAND: git.exe --version
+git version 2.53.0.windows.3
+
+EXIT CODE: 0

@@ -1,0 +1,10 @@
+COMMAND: leanexport.exe Challenge -- VerifiedPaper.t01 VerifiedPaper.t02 VerifiedPaper.t03 VerifiedPaper.t04 VerifiedPaper.t05 VerifiedPaper.t06 VerifiedPaper.t07 VerifiedPaper.t08 VerifiedPaper.t09 VerifiedPaper.t10 VerifiedPaper.t11 VerifiedPaper.t12 VerifiedPaper.t13 VerifiedPaper.all_principal propext Classical.choice Quot.sound Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam Quot Quot.mk Quot.lift Quot.ind
+
+EXIT CODE: 0
+EXPORT BYTES: 177254113
+
+
+COMMAND: leanexport.exe Solution -- VerifiedPaper.t01 VerifiedPaper.t02 VerifiedPaper.t03 VerifiedPaper.t04 VerifiedPaper.t05 VerifiedPaper.t06 VerifiedPaper.t07 VerifiedPaper.t08 VerifiedPaper.t09 VerifiedPaper.t10 VerifiedPaper.t11 VerifiedPaper.t12 VerifiedPaper.t13 VerifiedPaper.all_principal propext Classical.choice Quot.sound Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam Quot Quot.mk Quot.lift Quot.ind
+
+EXIT CODE: 0
+EXPORT BYTES: 436963411

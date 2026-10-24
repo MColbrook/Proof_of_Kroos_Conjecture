@@ -1,0 +1,25 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "VerifiedPaper.t01",
+    "VerifiedPaper.t02",
+    "VerifiedPaper.t03",
+    "VerifiedPaper.t04",
+    "VerifiedPaper.t05",
+    "VerifiedPaper.t06",
+    "VerifiedPaper.t07",
+    "VerifiedPaper.t08",
+    "VerifiedPaper.t09",
+    "VerifiedPaper.t10",
+    "VerifiedPaper.t11",
+    "VerifiedPaper.t12",
+    "VerifiedPaper.t13",
+    "VerifiedPaper.all_principal"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

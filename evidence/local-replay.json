@@ -1,0 +1,822 @@
+{
+  "status": "passed",
+  "startedUtc": "2026-10-24T12:54:36.272Z",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "compiled": [
+    "Bandlimited/Definitions.lean",
+    "Bandlimited/FourierConvention.lean",
+    "Bandlimited/SchwartzCutoff.lean",
+    "Bandlimited/GaussianSchwartz.lean",
+    "Bandlimited/GaussianFourierNormalization.lean",
+    "Bandlimited/GaussianCutoff.lean",
+    "Bandlimited/TensorDensity.lean",
+    "Bandlimited/BandlimitedOperations.lean",
+    "Bandlimited/WeightedSchwartz.lean",
+    "Bandlimited/WeightedDensityDual.lean",
+    "Bandlimited/BoundaryUniqueness.lean",
+    "Bandlimited/C0Families.lean",
+    "Bandlimited/LaplaceC0.lean",
+    "Bandlimited/LaplaceInversion.lean",
+    "Bandlimited/C0SmoothDensity.lean",
+    "Bandlimited/C0LocalIdeal.lean",
+    "Bandlimited/OneSidedDensity.lean",
+    "Bandlimited/ConvexGaussianScalar.lean",
+    "Bandlimited/ConvexWeightedGaussian.lean",
+    "Bandlimited/ConvexGaussianTarget.lean",
+    "Bandlimited/ConvexGaussianActive.lean",
+    "Bandlimited/ConvexGaussianGeometry.lean",
+    "Bandlimited/ConvexGaussianErrors.lean",
+    "Bandlimited/FourierTransport.lean",
+    "Bandlimited/FourierTensor.lean",
+    "Bandlimited/ConvexGaussianAssembly.lean",
+    "Bandlimited/FourierLinear.lean",
+    "Bandlimited/FourierProduct.lean",
+    "Bandlimited/ConvexGaussianTheorem.lean",
+    "Bandlimited/FiniteFamily.lean",
+    "Bandlimited/ConvexGaussianClosed.lean",
+    "Bandlimited/PolynomialTransport.lean",
+    "NumericalBounds.lean",
+    "Bandlimited/KernelTaylor.lean",
+    "Bandlimited/FunctionalPolynomial.lean",
+    "Bandlimited/Rescaling.lean",
+    "Bandlimited/KernelScalarEstimates.lean",
+    "Bandlimited/BodyGeometry.lean",
+    "Bandlimited/SupportingFunctional.lean",
+    "Bandlimited/SupportingChart.lean",
+    "Bandlimited/AngularGeometry.lean",
+    "Bandlimited/SupportingHeight.lean",
+    "Bandlimited/ChartBoundary.lean",
+    "Bandlimited/ChartAngularBounds.lean",
+    "Bandlimited/LocalAngularGaussian.lean",
+    "Bandlimited/LocalAngularError.lean",
+    "Bandlimited/MainReductions.lean",
+    "Bandlimited/PolynomialLifting.lean",
+    "Bandlimited/KernelGeometry.lean",
+    "Bandlimited/KernelTails.lean",
+    "Bandlimited/KernelWeights.lean",
+    "Bandlimited/KernelErrorAssembly.lean",
+    "Bandlimited/UniformGaussian.lean",
+    "Bandlimited/SphericalQuadrature.lean",
+    "Bandlimited/SphericalCaps.lean",
+    "Bandlimited/SphericalEstimates.lean",
+    "Bandlimited/SphericalGaussian.lean",
+    "Bandlimited/SphericalTheorem.lean",
+    "Bandlimited/Summation.lean",
+    "Bandlimited/KernelToBoundary.lean",
+    "Bandlimited/BodyGauge.lean",
+    "Bandlimited/MaximalFrame.lean",
+    "Bandlimited/UniformNormalization.lean",
+    "Bandlimited/UniformBodies.lean",
+    "Bandlimited/PrincipalResults.lean",
+    "Bandlimited.lean",
+    "Challenge.lean",
+    "Solution.lean",
+    "AxiomReport.lean"
+  ],
+  "sourceHashes": {
+    "Bandlimited.lean": "6568cd4877b1516b0047afeef79d20c32b0871a5008482845d7b24d7ffadb39b",
+    "Challenge.lean": "b3261e7ee23bdf4537208e13a61405eb8a2acf98ed37a3deb065416205f8a309",
+    "Solution.lean": "88512b75052d4d47087c85358ed8db31cc5a202fe1dacae475d3cbb4516f2a91",
+    "AxiomReport.lean": "8f734a28d42337824da5505c024981a2ef5b8fb4f5f38bf3634da5126260bf11",
+    "NumericalBounds.lean": "4f399f67b7aaeb20778db612980b5f01b88e9ec8ccb7f62003cac133889c2a3c",
+    "Bandlimited/AngularGeometry.lean": "3375e6a1ffcaacf814728feaa30bfc3be1d6aa8ac80feed060c64097969b4249",
+    "Bandlimited/BandlimitedOperations.lean": "034a50f18b314cf015e69fde8432d5ada8ac3b39dd62222062a1a1f818ded26e",
+    "Bandlimited/BodyGauge.lean": "a97500ac1325dae5c4d1a0b83fd3583089be2ee47d9413802b4111e3fa6d4021",
+    "Bandlimited/BodyGeometry.lean": "351cd89d6cd75cce3bb6da76550ecfd94667fe29df485856b7ae63bdb46ef69d",
+    "Bandlimited/BoundaryUniqueness.lean": "03b2ef032727c2db257ae7c6a45ded1de07d91c144e4d322f876baa57a59c71e",
+    "Bandlimited/C0Families.lean": "6d38f0582557f7ddfb943b8ef9ee678fb1ec226cd14feb485f742c7f0eb600ad",
+    "Bandlimited/C0LocalIdeal.lean": "5f1ee23f45f601450d1091c4b100281b0599fb2f04fc4a8795fd10706a1771ab",
+    "Bandlimited/C0SmoothDensity.lean": "2c7b0f8c0c183862e5c002617ec2b283ef3c9bf46cfd2cc05903d3d30340a696",
+    "Bandlimited/ChartAngularBounds.lean": "87bc57de7545552f5fb9c6f77780d507dce4d02f9449eddc80baf0bb730f7167",
+    "Bandlimited/ChartBoundary.lean": "1b46459d574819b636122c92e081108c6e4a87e284b1b40ddd30027c949c4f98",
+    "Bandlimited/ConvexGaussianActive.lean": "7452fea3bd7e1de092045d2e084b6cc92d61325a8523be6653b4111ec5fec453",
+    "Bandlimited/ConvexGaussianAssembly.lean": "cfff0d115e840e7030d6502a9c8daf31ec248463628e3c728ab3e0b93833b282",
+    "Bandlimited/ConvexGaussianClosed.lean": "b11a16657fa316965eee367dd84dacd8f143695bc8ac331c18c17cdb7ed58f69",
+    "Bandlimited/ConvexGaussianErrors.lean": "91bb59aeea2bf99d4fee46fe8406d2fa203665ab32b2ba98cffb91776f460df8",
+    "Bandlimited/ConvexGaussianGeometry.lean": "cae683e1e314c370fdb1a74798a44eb2a3e2a75857e2dab0f43cd48b550154ea",
+    "Bandlimited/ConvexGaussianScalar.lean": "b5094aa5730b49f136ad96f1912c728c0e7e533e0a80186242502dcdb8f46c7f",
+    "Bandlimited/ConvexGaussianTarget.lean": "9194056bf6c0e8fa941f9bdd45f6e074f5f305adeaa751b0240d3a4a319670fe",
+    "Bandlimited/ConvexGaussianTheorem.lean": "b38648aa4f34bf48843cb7ef3b8f4b22bf1b07d17e83237f225ea6dfc65b188b",
+    "Bandlimited/ConvexWeightedGaussian.lean": "1fff0d216f6eb479663495ff9ce05f39762617218f85072d59cc6dd6addc7793",
+    "Bandlimited/Definitions.lean": "f50047e1912784c9461db238fbde55a96570396bf2cc996958901cd19cc93445",
+    "Bandlimited/FiniteFamily.lean": "18ed1e7d0c119777fe36e3d0064353c4bb0ccf479bb4b2afa55f4cb1afba8dd6",
+    "Bandlimited/FourierConvention.lean": "33194862861c68958e8d31e632d7ef081be3c2047c51fe5629a848fab377c541",
+    "Bandlimited/FourierLinear.lean": "406394eae4f6de73d827cc4b1192e65c3005ad17c070133b687de334f9138451",
+    "Bandlimited/FourierProduct.lean": "48babbc156bd2b55bb848c2187ae526f21c91e6be74d5024e48b86e8709f37dd",
+    "Bandlimited/FourierTensor.lean": "7cf0f4ea0673b1fcfa2b41014991ef7dd95354dc7cd99c0439323c1c38b4f9df",
+    "Bandlimited/FourierTransport.lean": "0a1e2c35904da9963fdb4fe82369c97bc599a65b939a03ae47aa56c77a0e8ac4",
+    "Bandlimited/FunctionalPolynomial.lean": "24cc55cf40216fd2b62d8af9f9d9a09e4b19ff6657867bd6edc27cc58feeb654",
+    "Bandlimited/GaussianCutoff.lean": "93d08b73868ae24eff1452cc99638fcf574c74476dab6f0e6920722340e6fa0b",
+    "Bandlimited/GaussianFourierNormalization.lean": "f8a0421de98151164740b91679d718be32e0056d6769cc3299a7a353a5f67a81",
+    "Bandlimited/GaussianSchwartz.lean": "db1926051b970fca69aea0adc877d1f47c018e03e1895734b4bb5176eb4fdc0d",
+    "Bandlimited/KernelErrorAssembly.lean": "5ea1026375ade6483043d7ec86bd248ceb75f0bf19333aae0e20332d03a0c09c",
+    "Bandlimited/KernelGeometry.lean": "ea18d83dfe89e1030e2dee3d47761bb3b5fd1a965868f6ec8381fd3842ccd148",
+    "Bandlimited/KernelScalarEstimates.lean": "517242a2f29c43d7e882580f89ea050ef358fdb1205267cb38d2d1d5fc0a4be7",
+    "Bandlimited/KernelTails.lean": "c42a3c6e8144c945e8c49031841d57dfcd222bd543949d4fcd72c956eb9e427e",
+    "Bandlimited/KernelTaylor.lean": "4e11d8b319821a059c5053b8be86c5f673ccb4a1b780067ea5cea71fb0268310",
+    "Bandlimited/KernelToBoundary.lean": "624542f96c562b834f8acc7afa98c0583652c61b37d6fb6b2cd92570352e1280",
+    "Bandlimited/KernelWeights.lean": "d22beae6fa01e10924b23b90212db5e8d7392c232986a6cd593496225b2462df",
+    "Bandlimited/LaplaceC0.lean": "7e7af6c9f2bd14e4a907cb914f5d0d8f230c39cb8acd92154b5ce371d8c42bda",
+    "Bandlimited/LaplaceInversion.lean": "bff6ebc45186213112989aefcf76f63cb18a4efc4f6895870fe977c90a148209",
+    "Bandlimited/LocalAngularError.lean": "01f599b3710f0248d0ac7d906a7438d03f0eed3c800afb25bc83dadd6d3c6fe9",
+    "Bandlimited/LocalAngularGaussian.lean": "5bef8202df443c527f2b38dc652ea6107a6fb84fb04a2366e6ac4909154f43de",
+    "Bandlimited/MainReductions.lean": "83d761191d54b70ebafeaabfbba44dd027b355d7ba64ca7c45d3fbf4430077ae",
+    "Bandlimited/MaximalFrame.lean": "19cd16323eda6f1e795edcfce5eeb2b44994cacc740c3f40e7371246cd647502",
+    "Bandlimited/OneSidedDensity.lean": "b5b6754c5e15dbef62a7a185ef1c97f42b51307bb8a95c229f6e4ef389e040c5",
+    "Bandlimited/PolynomialLifting.lean": "07e9a852ba3431bb0e976e2296245ac080b68be61e204ef195d12cdf6023e7e0",
+    "Bandlimited/PolynomialTransport.lean": "dacfe1b5e2da2674ac458f0c44858cd8859ec281586766264704a4364e8ec3b1",
+    "Bandlimited/PrincipalResults.lean": "1a0fa3dee6a1db602c67ddff40080215c849d112e6e8f36b776d4787a29f5af6",
+    "Bandlimited/Rescaling.lean": "7b0ef07f8964f9355509d58565644579a60954e792cfc92b5fa7302912a6483b",
+    "Bandlimited/SchwartzCutoff.lean": "90b23ca2e701c551378746e4ce50859fb6d6ed96b8dba8946128fd79dc92ee36",
+    "Bandlimited/SphericalCaps.lean": "26397329b6add9dfa97983eaa27d0998f420a1601c0141360dca01d5604a86b4",
+    "Bandlimited/SphericalEstimates.lean": "63115b67824eb94a80c01c9fab187ca9adb68bf5670783fe767d2bbb5d715738",
+    "Bandlimited/SphericalGaussian.lean": "65ba317102d076ecbcb41dcc2eb51a169259080ce7356445b868c81dbb77de41",
+    "Bandlimited/SphericalQuadrature.lean": "f77a2c426fff2d2b975f240003f51c28e8ed769a38a4383f6e1b2f11ca84a0dc",
+    "Bandlimited/SphericalTheorem.lean": "2d2f35812a55e1b91065b4d4574fb9b3f80b351fca4547d58523e1a390a354c7",
+    "Bandlimited/Summation.lean": "251d7d8a1c6b7a62da06921f9c02398514ca770a116b2a6c45a47cbce911e5a4",
+    "Bandlimited/SupportingChart.lean": "73fd0f3930bfc5a4d1805e065dd300815099c63fe0ba27e51ff3252e70788db0",
+    "Bandlimited/SupportingFunctional.lean": "06eb3558f697c939d32683d602e5efc1150b58271f73342a8199d3fc9f36f527",
+    "Bandlimited/SupportingHeight.lean": "3964b653f3c9c277cd9a82bd7c46ca17e6ddd3cb83295dd62776d3cab17a6f49",
+    "Bandlimited/TensorDensity.lean": "ffd235e31a2e2e5366f0eb3bcb1061bd7d421b614b382c9acbe33e5ef44fbd47",
+    "Bandlimited/UniformBodies.lean": "b95c87b4874e2c39d20cc2a4573a5629b60384501f6bd5918921d3f4299f2ff7",
+    "Bandlimited/UniformGaussian.lean": "ca35ba2d1ffb81578152609e075c918f834cdf043560fa450c976b530a56d566",
+    "Bandlimited/UniformNormalization.lean": "a1e672b0d17f9292fe7c4269cced248ad4113a13092499b060c90ee99047dbc1",
+    "Bandlimited/WeightedDensityDual.lean": "69f88d3b023bfc2b0ce03c1f67c7ce74e3601fbaeb0b2a65d4b581dca19440bb",
+    "Bandlimited/WeightedSchwartz.lean": "7460fe967c0a1d0e80d9042d5e75094a79ae79b39f6e61b24bbde5df2faefbe8"
+  },
+  "commands": [
+    {
+      "command": "lean.exe --version",
+      "log": "evidence/versions.txt",
+      "startedUtc": "2026-10-24T12:54:36.279Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:54:36.597Z",
+      "originalLogName": "lean-version.txt"
+    },
+    {
+      "command": "lake.exe --version",
+      "log": "evidence/versions.txt",
+      "startedUtc": "2026-10-24T12:54:36.598Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:54:36.800Z",
+      "originalLogName": "lake-version.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\Definitions.olean Bandlimited/Definitions.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:54:36.801Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:55:16.212Z",
+      "originalLogName": "compile-Bandlimited_Definitions.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FourierConvention.olean Bandlimited/FourierConvention.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:55:16.216Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:55:36.264Z",
+      "originalLogName": "compile-Bandlimited_FourierConvention.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SchwartzCutoff.olean Bandlimited/SchwartzCutoff.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:55:36.266Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:55:58.640Z",
+      "originalLogName": "compile-Bandlimited_SchwartzCutoff.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\GaussianSchwartz.olean Bandlimited/GaussianSchwartz.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:55:58.643Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:56:19.856Z",
+      "originalLogName": "compile-Bandlimited_GaussianSchwartz.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\GaussianFourierNormalization.olean Bandlimited/GaussianFourierNormalization.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:56:19.859Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:56:38.474Z",
+      "originalLogName": "compile-Bandlimited_GaussianFourierNormalization.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\GaussianCutoff.olean Bandlimited/GaussianCutoff.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:56:38.476Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:57:00.245Z",
+      "originalLogName": "compile-Bandlimited_GaussianCutoff.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\TensorDensity.olean Bandlimited/TensorDensity.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:57:00.252Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:57:23.637Z",
+      "originalLogName": "compile-Bandlimited_TensorDensity.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\BandlimitedOperations.olean Bandlimited/BandlimitedOperations.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:57:23.639Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:57:42.688Z",
+      "originalLogName": "compile-Bandlimited_BandlimitedOperations.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\WeightedSchwartz.olean Bandlimited/WeightedSchwartz.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:57:42.691Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:58:06.566Z",
+      "originalLogName": "compile-Bandlimited_WeightedSchwartz.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\WeightedDensityDual.olean Bandlimited/WeightedDensityDual.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:58:06.568Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:58:30.742Z",
+      "originalLogName": "compile-Bandlimited_WeightedDensityDual.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\BoundaryUniqueness.olean Bandlimited/BoundaryUniqueness.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:58:30.745Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:58:57.311Z",
+      "originalLogName": "compile-Bandlimited_BoundaryUniqueness.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\C0Families.olean Bandlimited/C0Families.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:58:57.313Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T12:59:20.039Z",
+      "originalLogName": "compile-Bandlimited_C0Families.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\LaplaceC0.olean Bandlimited/LaplaceC0.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T12:59:20.041Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:00:04.933Z",
+      "originalLogName": "compile-Bandlimited_LaplaceC0.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\LaplaceInversion.olean Bandlimited/LaplaceInversion.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:00:04.935Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:00:37.942Z",
+      "originalLogName": "compile-Bandlimited_LaplaceInversion.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\C0SmoothDensity.olean Bandlimited/C0SmoothDensity.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:00:37.946Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:01:01.069Z",
+      "originalLogName": "compile-Bandlimited_C0SmoothDensity.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\C0LocalIdeal.olean Bandlimited/C0LocalIdeal.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:01:01.072Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:01:23.881Z",
+      "originalLogName": "compile-Bandlimited_C0LocalIdeal.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\OneSidedDensity.olean Bandlimited/OneSidedDensity.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:01:23.884Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:01:44.502Z",
+      "originalLogName": "compile-Bandlimited_OneSidedDensity.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianScalar.olean Bandlimited/ConvexGaussianScalar.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:01:44.505Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:02:06.385Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianScalar.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexWeightedGaussian.olean Bandlimited/ConvexWeightedGaussian.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:02:06.388Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:02:41.250Z",
+      "originalLogName": "compile-Bandlimited_ConvexWeightedGaussian.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianTarget.olean Bandlimited/ConvexGaussianTarget.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:02:41.252Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:03:10.779Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianTarget.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianActive.olean Bandlimited/ConvexGaussianActive.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:03:10.781Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:03:30.922Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianActive.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianGeometry.olean Bandlimited/ConvexGaussianGeometry.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:03:30.924Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:03:59.494Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianGeometry.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianErrors.olean Bandlimited/ConvexGaussianErrors.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:03:59.497Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:04:33.330Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianErrors.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FourierTransport.olean Bandlimited/FourierTransport.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:04:33.333Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:05:04.818Z",
+      "originalLogName": "compile-Bandlimited_FourierTransport.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FourierTensor.olean Bandlimited/FourierTensor.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:05:04.833Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:05:56.156Z",
+      "originalLogName": "compile-Bandlimited_FourierTensor.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianAssembly.olean Bandlimited/ConvexGaussianAssembly.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:05:56.159Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:06:27.417Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianAssembly.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FourierLinear.olean Bandlimited/FourierLinear.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:06:27.419Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:06:49.016Z",
+      "originalLogName": "compile-Bandlimited_FourierLinear.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FourierProduct.olean Bandlimited/FourierProduct.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:06:49.019Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:07:14.837Z",
+      "originalLogName": "compile-Bandlimited_FourierProduct.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianTheorem.olean Bandlimited/ConvexGaussianTheorem.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:07:14.839Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:07:49.880Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianTheorem.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FiniteFamily.olean Bandlimited/FiniteFamily.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:07:49.883Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:08:15.520Z",
+      "originalLogName": "compile-Bandlimited_FiniteFamily.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ConvexGaussianClosed.olean Bandlimited/ConvexGaussianClosed.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:08:15.522Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:08:36.802Z",
+      "originalLogName": "compile-Bandlimited_ConvexGaussianClosed.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\PolynomialTransport.olean Bandlimited/PolynomialTransport.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:08:36.805Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:08:56.835Z",
+      "originalLogName": "compile-Bandlimited_PolynomialTransport.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\NumericalBounds.olean NumericalBounds.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:08:56.837Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:09:13.926Z",
+      "originalLogName": "compile-NumericalBounds.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelTaylor.olean Bandlimited/KernelTaylor.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:09:13.928Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:09:39.234Z",
+      "originalLogName": "compile-Bandlimited_KernelTaylor.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\FunctionalPolynomial.olean Bandlimited/FunctionalPolynomial.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:09:39.237Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:09:57.240Z",
+      "originalLogName": "compile-Bandlimited_FunctionalPolynomial.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\Rescaling.olean Bandlimited/Rescaling.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:09:57.241Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:10:14.005Z",
+      "originalLogName": "compile-Bandlimited_Rescaling.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelScalarEstimates.olean Bandlimited/KernelScalarEstimates.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:10:14.009Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:10:32.036Z",
+      "originalLogName": "compile-Bandlimited_KernelScalarEstimates.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\BodyGeometry.olean Bandlimited/BodyGeometry.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:10:32.038Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:10:52.645Z",
+      "originalLogName": "compile-Bandlimited_BodyGeometry.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SupportingFunctional.olean Bandlimited/SupportingFunctional.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:10:52.648Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:11:16.422Z",
+      "originalLogName": "compile-Bandlimited_SupportingFunctional.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SupportingChart.olean Bandlimited/SupportingChart.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:11:16.424Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:11:36.367Z",
+      "originalLogName": "compile-Bandlimited_SupportingChart.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\AngularGeometry.olean Bandlimited/AngularGeometry.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:11:36.369Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:11:54.625Z",
+      "originalLogName": "compile-Bandlimited_AngularGeometry.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SupportingHeight.olean Bandlimited/SupportingHeight.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:11:54.627Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:12:16.903Z",
+      "originalLogName": "compile-Bandlimited_SupportingHeight.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ChartBoundary.olean Bandlimited/ChartBoundary.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:12:16.906Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:12:43.089Z",
+      "originalLogName": "compile-Bandlimited_ChartBoundary.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\ChartAngularBounds.olean Bandlimited/ChartAngularBounds.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:12:43.092Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:13:15.493Z",
+      "originalLogName": "compile-Bandlimited_ChartAngularBounds.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\LocalAngularGaussian.olean Bandlimited/LocalAngularGaussian.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:13:15.495Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:13:38.234Z",
+      "originalLogName": "compile-Bandlimited_LocalAngularGaussian.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\LocalAngularError.olean Bandlimited/LocalAngularError.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:13:38.237Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:13:56.226Z",
+      "originalLogName": "compile-Bandlimited_LocalAngularError.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\MainReductions.olean Bandlimited/MainReductions.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:13:56.229Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:14:19.456Z",
+      "originalLogName": "compile-Bandlimited_MainReductions.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\PolynomialLifting.olean Bandlimited/PolynomialLifting.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:14:19.458Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:14:38.744Z",
+      "originalLogName": "compile-Bandlimited_PolynomialLifting.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelGeometry.olean Bandlimited/KernelGeometry.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:14:38.748Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:14:52.594Z",
+      "originalLogName": "compile-Bandlimited_KernelGeometry.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelTails.olean Bandlimited/KernelTails.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:14:52.595Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:15:09.438Z",
+      "originalLogName": "compile-Bandlimited_KernelTails.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelWeights.olean Bandlimited/KernelWeights.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:15:09.442Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:15:26.495Z",
+      "originalLogName": "compile-Bandlimited_KernelWeights.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelErrorAssembly.olean Bandlimited/KernelErrorAssembly.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:15:26.497Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:15:48.757Z",
+      "originalLogName": "compile-Bandlimited_KernelErrorAssembly.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\UniformGaussian.olean Bandlimited/UniformGaussian.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:15:48.759Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:16:12.805Z",
+      "originalLogName": "compile-Bandlimited_UniformGaussian.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SphericalQuadrature.olean Bandlimited/SphericalQuadrature.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:16:12.807Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:16:29.698Z",
+      "originalLogName": "compile-Bandlimited_SphericalQuadrature.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SphericalCaps.olean Bandlimited/SphericalCaps.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:16:29.701Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:16:48.407Z",
+      "originalLogName": "compile-Bandlimited_SphericalCaps.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SphericalEstimates.olean Bandlimited/SphericalEstimates.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:16:48.408Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:17:09.666Z",
+      "originalLogName": "compile-Bandlimited_SphericalEstimates.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SphericalGaussian.olean Bandlimited/SphericalGaussian.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:17:09.668Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:17:30.156Z",
+      "originalLogName": "compile-Bandlimited_SphericalGaussian.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\SphericalTheorem.olean Bandlimited/SphericalTheorem.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:17:30.158Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:17:47.374Z",
+      "originalLogName": "compile-Bandlimited_SphericalTheorem.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\Summation.olean Bandlimited/Summation.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:17:47.376Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:18:04.894Z",
+      "originalLogName": "compile-Bandlimited_Summation.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\KernelToBoundary.olean Bandlimited/KernelToBoundary.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:18:04.897Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:18:23.197Z",
+      "originalLogName": "compile-Bandlimited_KernelToBoundary.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\BodyGauge.olean Bandlimited/BodyGauge.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:18:23.199Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:18:43.543Z",
+      "originalLogName": "compile-Bandlimited_BodyGauge.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\MaximalFrame.olean Bandlimited/MaximalFrame.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:18:43.545Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:19:11.158Z",
+      "originalLogName": "compile-Bandlimited_MaximalFrame.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\UniformNormalization.olean Bandlimited/UniformNormalization.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:19:11.161Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:19:41.150Z",
+      "originalLogName": "compile-Bandlimited_UniformNormalization.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\UniformBodies.olean Bandlimited/UniformBodies.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:19:41.154Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:19:59.666Z",
+      "originalLogName": "compile-Bandlimited_UniformBodies.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited\\PrincipalResults.olean Bandlimited/PrincipalResults.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:19:59.668Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:20:19.708Z",
+      "originalLogName": "compile-Bandlimited_PrincipalResults.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Bandlimited.olean Bandlimited.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:20:19.714Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:20:41.036Z",
+      "originalLogName": "compile-Bandlimited.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Challenge.olean Challenge.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:20:41.038Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:20:59.390Z",
+      "originalLogName": "compile-Challenge.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\Solution.olean Solution.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:20:59.393Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:21:16.384Z",
+      "originalLogName": "compile-Solution.lean.txt"
+    },
+    {
+      "command": "lean.exe --memory=4096 --threads=2 -o <work>\\lib\\lean\\AxiomReport.olean AxiomReport.lean",
+      "log": "evidence/compilation.txt",
+      "startedUtc": "2026-10-24T13:21:16.389Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:21:33.001Z",
+      "originalLogName": "compile-AxiomReport.lean.txt"
+    },
+    {
+      "command": "leanexport.exe Challenge -- VerifiedPaper.t01 VerifiedPaper.t02 VerifiedPaper.t03 VerifiedPaper.t04 VerifiedPaper.t05 VerifiedPaper.t06 VerifiedPaper.t07 VerifiedPaper.t08 VerifiedPaper.t09 VerifiedPaper.t10 VerifiedPaper.t11 VerifiedPaper.t12 VerifiedPaper.t13 VerifiedPaper.all_principal propext Classical.choice Quot.sound Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam Quot Quot.mk Quot.lift Quot.ind",
+      "log": "evidence/exports.txt",
+      "startedUtc": "2026-10-24T13:21:33.006Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:22:07.975Z",
+      "exportBytes": 177254113,
+      "originalLogName": "export-Challenge.txt"
+    },
+    {
+      "command": "leanexport.exe Solution -- VerifiedPaper.t01 VerifiedPaper.t02 VerifiedPaper.t03 VerifiedPaper.t04 VerifiedPaper.t05 VerifiedPaper.t06 VerifiedPaper.t07 VerifiedPaper.t08 VerifiedPaper.t09 VerifiedPaper.t10 VerifiedPaper.t11 VerifiedPaper.t12 VerifiedPaper.t13 VerifiedPaper.all_principal propext Classical.choice Quot.sound Nat.add Nat.sub Nat.mul Nat.pow Nat.gcd Nat.div Nat.mod Nat.beq Nat.ble Nat.land Nat.lor Nat.xor Nat.shiftLeft Nat.shiftRight String.ofList Char.ofNat List eagerReduce Nat String String.mk Char optParam autoParam semiOutParam outParam Quot Quot.mk Quot.lift Quot.ind",
+      "log": "evidence/exports.txt",
+      "startedUtc": "2026-10-24T13:22:07.977Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:23:06.014Z",
+      "exportBytes": 436963411,
+      "originalLogName": "export-Solution.txt"
+    },
+    {
+      "command": "lake.exe comparator --config <repository>\\comparator.json --challenge-from-export <work>\\Challenge.ndjson --solution-from-export <work>\\Solution.ndjson",
+      "log": "evidence/comparator-startup-attempts.txt",
+      "startedUtc": "2026-10-24T13:23:06.017Z",
+      "exitCode": 2,
+      "finishedUtc": "2026-10-24T13:23:06.181Z",
+      "originalLogName": "comparator-sandboxed.txt"
+    },
+    {
+      "command": "lake.exe comparator --inadvisably-no-sandbox --config <work>\\comparator-local.json --challenge-from-export <work>\\Challenge.ndjson --solution-from-export <work>\\Solution.ndjson",
+      "log": "evidence/comparator-startup-attempts.txt",
+      "startedUtc": "2026-10-24T13:23:06.182Z",
+      "exitCode": 2,
+      "finishedUtc": "2026-10-24T13:23:06.331Z",
+      "originalLogName": "comparator-local.txt"
+    },
+    {
+      "command": "git.exe --version",
+      "log": "evidence/versions.txt",
+      "startedUtc": "2026-10-24T13:27:24.986Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:27:25.116Z",
+      "originalLogName": "git-version.txt"
+    },
+    {
+      "command": "lake.exe comparator --inadvisably-no-sandbox --config <work>\\comparator-local.json --challenge-from-export <work>\\Challenge.ndjson --solution-from-export <work>\\Solution.ndjson",
+      "log": "evidence/comparator.txt",
+      "startedUtc": "2026-10-24T13:27:25.119Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:32:52.508Z",
+      "originalLogName": "comparator-local-with-git.txt"
+    },
+    {
+      "command": "leanchecker-paranoid.exe --silent --from-export <work>\\Solution.ndjson",
+      "log": "evidence/paranoid.txt",
+      "startedUtc": "2026-10-24T13:32:52.523Z",
+      "exitCode": 0,
+      "finishedUtc": "2026-10-24T13:35:48.970Z",
+      "originalLogName": "leanchecker-paranoid.txt"
+    }
+  ],
+  "comparison": {
+    "roots": [
+      "VerifiedPaper.t01",
+      "VerifiedPaper.t02",
+      "VerifiedPaper.t03",
+      "VerifiedPaper.t04",
+      "VerifiedPaper.t05",
+      "VerifiedPaper.t06",
+      "VerifiedPaper.t07",
+      "VerifiedPaper.t08",
+      "VerifiedPaper.t09",
+      "VerifiedPaper.t10",
+      "VerifiedPaper.t11",
+      "VerifiedPaper.t12",
+      "VerifiedPaper.t13",
+      "VerifiedPaper.all_principal"
+    ],
+    "permittedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "checkedBy": [
+      "Lean kernel",
+      "NanoDa",
+      "con-ron",
+      "additional paranoid Lean checker"
+    ],
+    "sourceStability": true
+  },
+  "method": "Fresh source compilation using authenticated pinned external dependency caches as read-only inputs; no local proof library cache input.",
+  "palomarProductionVerification": false,
+  "localOsSandbox": false,
+  "preliminaryRunnerFailures": [
+    {
+      "command": "lake.exe comparator --config <repository>\\comparator.json --challenge-from-export <work>\\Challenge.ndjson --solution-from-export <work>\\Solution.ndjson",
+      "log": "evidence/comparator-startup-attempts.txt",
+      "exitCode": 2
+    },
+    {
+      "command": "lake.exe comparator --inadvisably-no-sandbox --config <work>\\comparator-local.json --challenge-from-export <work>\\Challenge.ndjson --solution-from-export <work>\\Solution.ndjson",
+      "log": "evidence/comparator-startup-attempts.txt",
+      "exitCode": 2
+    }
+  ],
+  "finishedUtc": "2026-10-24T13:35:49.045Z",
+  "commandsPathConvention": "Log paths are repository-relative; local absolute directory prefixes are redacted."
+}

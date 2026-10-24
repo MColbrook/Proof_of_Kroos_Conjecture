@@ -1,0 +1,7 @@
+COMMAND: python3 scripts/audit.py
+WARNING: Challenge exceeds Palomar's 32 KiB/300 line auditability warning threshold
+WARNING: Mathlib is not yet fetched; Palomar authenticates the pin and its exact toolchain independently
+Package audit passed: 69 Lean sources; 114 source-package files; 809982 bytes.
+This local audit is preparation evidence, not a Palomar verification or editorial decision.
+
+EXIT CODE: 0

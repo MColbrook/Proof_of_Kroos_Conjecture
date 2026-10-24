@@ -1,0 +1,13 @@
+COMMAND: lake.exe comparator --inadvisably-no-sandbox --config <work>\comparator-local.json --challenge-from-export <work>\Challenge.ndjson --solution-from-export <work>\Solution.ndjson
+WARNING: Sandbox disabled, this run is not trustworthy.
+Running con-ron kernel on solution
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: accepted 56994 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+
+EXIT CODE: 0

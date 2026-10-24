@@ -1,0 +1,17 @@
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\AxiomReport.olean AxiomReport.lean
+'VerifiedPaper.t01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t02' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t03' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t04' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t05' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t06' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t07' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t08' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t09' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.all_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0

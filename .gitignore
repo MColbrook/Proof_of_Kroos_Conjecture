@@ -1,0 +1,33 @@
+# Lean dependencies and build products
+.lake/
+lake-packages/
+build/
+*.olean
+*.olean.*
+*.ilean
+*.ir
+*.ir.sig
+*.c
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.bc
+*.trace
+
+# Generated local checking data
+verification-output/
+*.ndjson
+*.log
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.bak

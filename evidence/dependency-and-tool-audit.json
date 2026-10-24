@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-24T13:23:15.262Z",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlibToolchain": "leanprover/lean4:v4.35.0-rc3",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "expectedRevision": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "actualRevision": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "workingTreeClean": true
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expectedRevision": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "actualRevision": "fb13df72ecefd8ddbf9291021d7f33a8673eb57b",
+      "workingTreeClean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expectedRevision": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "actualRevision": "29ff470276c725ae01505d55b17148c18fc7dfd3",
+      "workingTreeClean": true
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expectedRevision": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+      "actualRevision": "10a2cfff285e1c7c2ebc49c0ba22cab0f3c58ee5",
+      "workingTreeClean": true
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expectedRevision": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "actualRevision": "c643bbb3c24f8a25f9c14e3a6b1ceb13d01f3de1",
+      "workingTreeClean": true
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expectedRevision": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "actualRevision": "a90fbf7b02ff06a0deebf74088dff9e5fe02c9ea",
+      "workingTreeClean": true
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expectedRevision": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "actualRevision": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "workingTreeClean": true
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expectedRevision": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+      "actualRevision": "33131f4fb10067cb3009bf4db615d9680c1ccd6b",
+      "workingTreeClean": true
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expectedRevision": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "actualRevision": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "workingTreeClean": true
+    }
+  ],
+  "toolBinarySHA256": {
+    "lean.exe": "cc24f20c0766382b971cd74cd67fb19413d16d01d6bc09ef90ed02c207cd6e1a",
+    "lake.exe": "5533e4b8acc951aab18835b27b1e631cc52a631c2a81b34d5853f2f54666aa5d",
+    "leanexport.exe": "05824a35ebd153603325242bd463e89ab137ed442074db2f4535c4ffa81827ee",
+    "leanchecker.exe": "f9e7fe9279dbd106af8258bc1b1d05be3a93fc44c65620847d3d4ad3b8951ccc",
+    "leanchecker-paranoid.exe": "29276ba581c1c11edc8a8573ac1194ee95297325e9912e5eeb3bb77c45f7516f",
+    "nanoda_bin.exe": "3fc1d022f5f051f49be1d6263b72df62e17e1d0226b28b494517916d09c2fd38",
+    "con-ron.exe": "4dd2aaf87cbb093f637f6a91cf8a9f7509827aa19aa72a160f5c7585336ae45c"
+  },
+  "readOnlyInputs": true,
+  "gitOptionalLocksDisabled": true,
+  "agentReadLiveManuscript": false,
+  "agentModifiedLiveManuscript": false
+}

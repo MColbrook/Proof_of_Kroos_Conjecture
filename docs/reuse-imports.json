@@ -1,0 +1,589 @@
+{
+  "mathlibRevision": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+  "mathlibLicense": "Apache-2.0",
+  "files": [
+    {
+      "file": "Bandlimited.lean",
+      "imports": [
+        "Bandlimited.PrincipalResults"
+      ]
+    },
+    {
+      "file": "Challenge.lean",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.RingTheory.MvPolynomial.Homogeneous",
+        "Mathlib.Topology.ContinuousMap.Basic",
+        "Mathlib.Analysis.Convex.Function",
+        "Mathlib.Analysis.Calculus.ContDiff.Defs",
+        "Mathlib.Topology.Algebra.Support",
+        "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+        "Mathlib.MeasureTheory.Constructions.HaarToSphere",
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "file": "Solution.lean",
+      "imports": [
+        "Bandlimited.PrincipalResults"
+      ]
+    },
+    {
+      "file": "AxiomReport.lean",
+      "imports": [
+        "Solution"
+      ]
+    },
+    {
+      "file": "NumericalBounds.lean",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "file": "Bandlimited/AngularGeometry.lean",
+      "imports": [
+        "Bandlimited.SupportingChart"
+      ]
+    },
+    {
+      "file": "Bandlimited/BandlimitedOperations.lean",
+      "imports": [
+        "Bandlimited.FourierConvention",
+        "Mathlib.Topology.Algebra.Support"
+      ]
+    },
+    {
+      "file": "Bandlimited/BodyGauge.lean",
+      "imports": [
+        "Bandlimited.MainReductions",
+        "Mathlib.Analysis.Convex.Gauge"
+      ]
+    },
+    {
+      "file": "Bandlimited/BodyGeometry.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.Normed.Module.Ball.RadialEquiv"
+      ]
+    },
+    {
+      "file": "Bandlimited/BoundaryUniqueness.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.Complex.HasPrimitives",
+        "Mathlib.Analysis.Complex.ReImTopology",
+        "Mathlib.Analysis.Analytic.IsolatedZeros",
+        "Mathlib.Tactic.LinearCombination"
+      ]
+    },
+    {
+      "file": "Bandlimited/C0Families.lean",
+      "imports": [
+        "Bandlimited.TensorDensity",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Topology.CompactOpen",
+        "Bandlimited.BoundaryUniqueness",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    {
+      "file": "Bandlimited/C0LocalIdeal.lean",
+      "imports": [
+        "Bandlimited.C0SmoothDensity",
+        "Bandlimited.C0Families",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    {
+      "file": "Bandlimited/C0SmoothDensity.lean",
+      "imports": [
+        "Bandlimited.WeightedSchwartz",
+        "Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox",
+        "Mathlib.Topology.ContinuousMap.CompactlySupported"
+      ]
+    },
+    {
+      "file": "Bandlimited/ChartAngularBounds.lean",
+      "imports": [
+        "Bandlimited.ChartBoundary"
+      ]
+    },
+    {
+      "file": "Bandlimited/ChartBoundary.lean",
+      "imports": [
+        "Bandlimited.SupportingHeight"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianActive.lean",
+      "imports": [
+        "Bandlimited.ConvexGaussianScalar",
+        "Bandlimited.ConvexGaussianTarget"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianAssembly.lean",
+      "imports": [
+        "Bandlimited.ConvexGaussianActive",
+        "Bandlimited.ConvexGaussianGeometry",
+        "Bandlimited.ConvexGaussianErrors",
+        "Bandlimited.FourierTensor"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianClosed.lean",
+      "imports": [
+        "Bandlimited.OneSidedDensity",
+        "Bandlimited.ConvexGaussianTheorem",
+        "Bandlimited.FiniteFamily"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianErrors.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Bandlimited.GaussianCutoff"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianGeometry.lean",
+      "imports": [
+        "Bandlimited.ConvexWeightedGaussian",
+        "Mathlib.Analysis.InnerProductSpace.ProdL2",
+        "Mathlib.Topology.Algebra.Module.Equiv.Prod"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianScalar.lean",
+      "imports": [
+        "Bandlimited.WeightedSchwartz"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianTarget.lean",
+      "imports": [
+        "Bandlimited.ConvexWeightedGaussian",
+        "Bandlimited.WeightedSchwartz"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexGaussianTheorem.lean",
+      "imports": [
+        "Bandlimited.ConvexGaussianAssembly",
+        "Bandlimited.FourierProduct"
+      ]
+    },
+    {
+      "file": "Bandlimited/ConvexWeightedGaussian.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Bandlimited.TensorDensity",
+        "Bandlimited.GaussianCutoff",
+        "Mathlib.Analysis.Convex.Approximation",
+        "Mathlib.Analysis.InnerProductSpace.Dual",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.Analysis.SpecialFunctions.Pow.NNReal"
+      ]
+    },
+    {
+      "file": "Bandlimited/Definitions.lean",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.RingTheory.MvPolynomial.Homogeneous",
+        "Mathlib.Topology.ContinuousMap.Basic",
+        "Mathlib.Analysis.Convex.Function",
+        "Mathlib.Analysis.Calculus.ContDiff.Defs",
+        "Mathlib.Topology.Algebra.Support",
+        "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+        "Mathlib.MeasureTheory.Constructions.HaarToSphere",
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "file": "Bandlimited/FiniteFamily.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Bandlimited.FourierConvention",
+        "Bandlimited.GaussianCutoff",
+        "Mathlib.Analysis.Convex.FunctionTopology",
+        "Mathlib.Topology.UniformSpace.Ascoli",
+        "Mathlib.Topology.MetricSpace.Equicontinuity",
+        "Mathlib.Topology.ContinuousMap.Compact"
+      ]
+    },
+    {
+      "file": "Bandlimited/FourierConvention.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.Fourier.FourierTransform",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+        "Mathlib.MeasureTheory.Measure.Haar.NormedSpace"
+      ]
+    },
+    {
+      "file": "Bandlimited/FourierLinear.lean",
+      "imports": [
+        "Bandlimited.FourierTransport",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint",
+        "Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar"
+      ]
+    },
+    {
+      "file": "Bandlimited/FourierProduct.lean",
+      "imports": [
+        "Bandlimited.FourierLinear",
+        "Mathlib.Analysis.InnerProductSpace.ProdL2",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ]
+    },
+    {
+      "file": "Bandlimited/FourierTensor.lean",
+      "imports": [
+        "Bandlimited.FourierTransport",
+        "Bandlimited.TensorDensity",
+        "Mathlib.MeasureTheory.Integral.Pi",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ]
+    },
+    {
+      "file": "Bandlimited/FourierTransport.lean",
+      "imports": [
+        "Bandlimited.FourierConvention",
+        "Mathlib.Analysis.Calculus.ContDiff.Operations",
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic"
+      ]
+    },
+    {
+      "file": "Bandlimited/FunctionalPolynomial.lean",
+      "imports": [
+        "Bandlimited.PolynomialTransport"
+      ]
+    },
+    {
+      "file": "Bandlimited/GaussianCutoff.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Bandlimited.FourierConvention",
+        "Bandlimited.SchwartzCutoff",
+        "Bandlimited.GaussianSchwartz",
+        "Bandlimited.GaussianFourierNormalization",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct"
+      ]
+    },
+    {
+      "file": "Bandlimited/GaussianFourierNormalization.lean",
+      "imports": [
+        "Bandlimited.FourierConvention",
+        "Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform"
+      ]
+    },
+    {
+      "file": "Bandlimited/GaussianSchwartz.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Analysis.SpecialFunctions.SmoothTransition",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelErrorAssembly.lean",
+      "imports": [
+        "Bandlimited.KernelScalarEstimates",
+        "Bandlimited.KernelWeights",
+        "Bandlimited.ConvexGaussianErrors"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelGeometry.lean",
+      "imports": [
+        "Bandlimited.LocalAngularError",
+        "Bandlimited.PolynomialLifting"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelScalarEstimates.lean",
+      "imports": [
+        "Bandlimited.Rescaling",
+        "Bandlimited.Definitions"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelTails.lean",
+      "imports": [
+        "Bandlimited.WeightedSchwartz",
+        "Bandlimited.BandlimitedOperations",
+        "Bandlimited.GaussianSchwartz"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelTaylor.lean",
+      "imports": [
+        "Bandlimited.PolynomialTransport",
+        "Bandlimited.FourierTransport",
+        "NumericalBounds",
+        "Mathlib.Analysis.Complex.Exponential",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelToBoundary.lean",
+      "imports": [
+        "Bandlimited.BodyGeometry",
+        "Bandlimited.Summation",
+        "Lean.Elab.Tactic.Omega"
+      ]
+    },
+    {
+      "file": "Bandlimited/KernelWeights.lean",
+      "imports": [
+        "Bandlimited.KernelGeometry",
+        "Bandlimited.KernelTails"
+      ]
+    },
+    {
+      "file": "Bandlimited/LaplaceC0.lean",
+      "imports": [
+        "Bandlimited.WeightedSchwartz",
+        "Bandlimited.WeightedDensityDual",
+        "Bandlimited.C0Families"
+      ]
+    },
+    {
+      "file": "Bandlimited/LaplaceInversion.lean",
+      "imports": [
+        "Bandlimited.LaplaceC0",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    {
+      "file": "Bandlimited/LocalAngularError.lean",
+      "imports": [
+        "Bandlimited.LocalAngularGaussian"
+      ]
+    },
+    {
+      "file": "Bandlimited/LocalAngularGaussian.lean",
+      "imports": [
+        "Bandlimited.ChartAngularBounds"
+      ]
+    },
+    {
+      "file": "Bandlimited/MainReductions.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Data.Nat.Find",
+        "Lean.Elab.Tactic.Omega"
+      ]
+    },
+    {
+      "file": "Bandlimited/MaximalFrame.lean",
+      "imports": [
+        "Bandlimited.BodyGauge",
+        "Mathlib.Topology.Instances.Matrix",
+        "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv",
+        "Mathlib.LinearAlgebra.Matrix.Adjugate"
+      ]
+    },
+    {
+      "file": "Bandlimited/OneSidedDensity.lean",
+      "imports": [
+        "Bandlimited.LaplaceInversion",
+        "Bandlimited.C0LocalIdeal",
+        "Bandlimited.BandlimitedOperations"
+      ]
+    },
+    {
+      "file": "Bandlimited/PolynomialLifting.lean",
+      "imports": [
+        "Bandlimited.MainReductions",
+        "Mathlib.Topology.ContinuousMap.StoneWeierstrass"
+      ]
+    },
+    {
+      "file": "Bandlimited/PolynomialTransport.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Topology.Algebra.Module.FiniteDimension"
+      ]
+    },
+    {
+      "file": "Bandlimited/PrincipalResults.lean",
+      "imports": [
+        "Bandlimited.UniformGaussian",
+        "Bandlimited.SphericalTheorem",
+        "Bandlimited.KernelToBoundary",
+        "Bandlimited.BodyGauge",
+        "Bandlimited.UniformBodies",
+        "Bandlimited.PolynomialLifting"
+      ]
+    },
+    {
+      "file": "Bandlimited/Rescaling.lean",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "file": "Bandlimited/SchwartzCutoff.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+        "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+        "Mathlib.Analysis.Calculus.ContDiff.Bounds"
+      ]
+    },
+    {
+      "file": "Bandlimited/SphericalCaps.lean",
+      "imports": [
+        "Bandlimited.SphericalQuadrature",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.Basic"
+      ]
+    },
+    {
+      "file": "Bandlimited/SphericalEstimates.lean",
+      "imports": [
+        "Bandlimited.SphericalCaps",
+        "Mathlib.MeasureTheory.Integral.Layercake",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ]
+    },
+    {
+      "file": "Bandlimited/SphericalGaussian.lean",
+      "imports": [
+        "Bandlimited.SphericalCaps"
+      ]
+    },
+    {
+      "file": "Bandlimited/SphericalQuadrature.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Analysis.InnerProductSpace.Projection.Reflection",
+        "Mathlib.MeasureTheory.Measure.Regular",
+        "Mathlib.Analysis.Convex.Integral",
+        "Mathlib.Analysis.Convex.Combination",
+        "Mathlib.Topology.ContinuousMap.Compact",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+        "Mathlib.MeasureTheory.Integral.Bochner.Set"
+      ]
+    },
+    {
+      "file": "Bandlimited/SphericalTheorem.lean",
+      "imports": [
+        "Bandlimited.SphericalEstimates",
+        "Bandlimited.SphericalGaussian"
+      ]
+    },
+    {
+      "file": "Bandlimited/Summation.lean",
+      "imports": [
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "file": "Bandlimited/SupportingChart.lean",
+      "imports": [
+        "Bandlimited.SupportingFunctional",
+        "Mathlib.Analysis.InnerProductSpace.Basic"
+      ]
+    },
+    {
+      "file": "Bandlimited/SupportingFunctional.lean",
+      "imports": [
+        "Bandlimited.BodyGeometry",
+        "Mathlib.Analysis.Normed.Module.HahnBanach",
+        "Mathlib.Analysis.Convex.Function"
+      ]
+    },
+    {
+      "file": "Bandlimited/SupportingHeight.lean",
+      "imports": [
+        "Bandlimited.AngularGeometry"
+      ]
+    },
+    {
+      "file": "Bandlimited/TensorDensity.lean",
+      "imports": [
+        "Bandlimited.Definitions",
+        "Mathlib.Tactic.FunProp",
+        "Mathlib.Topology.PartitionOfUnity",
+        "Mathlib.Analysis.Normed.Group.Bounded",
+        "Mathlib.Topology.UniformSpace.HeineCantor"
+      ]
+    },
+    {
+      "file": "Bandlimited/UniformBodies.lean",
+      "imports": [
+        "Bandlimited.UniformNormalization",
+        "Bandlimited.PolynomialTransport"
+      ]
+    },
+    {
+      "file": "Bandlimited/UniformGaussian.lean",
+      "imports": [
+        "Bandlimited.ConvexGaussianClosed",
+        "Bandlimited.KernelTaylor",
+        "Bandlimited.FunctionalPolynomial",
+        "Bandlimited.KernelErrorAssembly"
+      ]
+    },
+    {
+      "file": "Bandlimited/UniformNormalization.lean",
+      "imports": [
+        "Bandlimited.MaximalFrame",
+        "Bandlimited.BodyGeometry"
+      ]
+    },
+    {
+      "file": "Bandlimited/WeightedDensityDual.lean",
+      "imports": [
+        "Bandlimited.TensorDensity",
+        "Mathlib.Analysis.Normed.Module.HahnBanach",
+        "Mathlib.Analysis.Normed.Group.Quotient",
+        "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Quotient",
+        "Mathlib.Topology.ContinuousMap.ZeroAtInfty"
+      ]
+    },
+    {
+      "file": "Bandlimited/WeightedSchwartz.lean",
+      "imports": [
+        "Bandlimited.GaussianCutoff",
+        "Bandlimited.TensorDensity",
+        "Bandlimited.BandlimitedOperations"
+      ]
+    }
+  ]
+}

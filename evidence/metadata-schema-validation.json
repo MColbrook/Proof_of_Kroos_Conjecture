@@ -1,0 +1,13 @@
+{
+  "command": "node <work>/validate-saved-schema.mjs <repository> <saved-v0.4.schema.json> <output.json>",
+  "utc": "2026-10-24T13:39:33.435Z",
+  "format": "JSON-compatible YAML 1.2",
+  "validator": "Local JSON-schema validator implementing every validation keyword present in the saved official schema; not an external validator",
+  "schema_url": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json",
+  "schema_sha256": "d046400f3cbf235aa233bbb79817b6978fbbfbe53466953481546b3efde5a155",
+  "metadata_sha256": "cdda9a17b103487bd4bad1ff292a33352e2beea54a5f035070c2d59f51fa2516",
+  "schema_validation_errors": [],
+  "main_results": 13,
+  "passed": true,
+  "production_palomar_admissibility_not_claimed": true
+}

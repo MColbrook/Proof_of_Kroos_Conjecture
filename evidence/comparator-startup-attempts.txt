@@ -1,0 +1,11 @@
+COMMAND: lake.exe comparator --config <repository>\comparator.json --challenge-from-export <work>\Challenge.ndjson --solution-from-export <work>\Solution.ndjson
+error: `lake comparator` sandboxes the code it checks with `bwrap`, which needs Linux namespaces.
+
+EXIT CODE: 2
+
+
+COMMAND: lake.exe comparator --inadvisably-no-sandbox --config <work>\comparator-local.json --challenge-from-export <work>\Challenge.ndjson --solution-from-export <work>\Solution.ndjson
+WARNING: Sandbox disabled, this run is not trustworthy.
+error: `lake comparator` needs `git` on PATH to build inside the sandbox
+
+EXIT CODE: 2

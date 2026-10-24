@@ -1,0 +1,366 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Homogeneous polynomial approximation on symmetric convex bodies",
+    "description": "For every origin-symmetric convex body with nonempty interior in a finite-dimensional real Euclidean space, continuous real boundary functions admit uniform approximation by real homogeneous polynomials of consecutive degrees. The development proves all thirteen principal results of the cited manuscript, including parity approximation, dimension-only uniform approximation of the constant function, homogeneous Gaussian kernels with polynomially weighted errors, fixed-bandwidth one-sided weighted density, tensor density, Gaussian Fourier cutoff, convex weighted approximation, finite-family selection and positive spherical quadrature. The thirteen declarations and their conjunction are compared against an independent self-contained Challenge using only the standard three Lean axioms.",
+    "authors": [
+      "Matthew J. Colbrook"
+    ],
+    "responsible_maintainers": [
+      "Matthew J. Colbrook"
+    ],
+    "license": "Apache-2.0"
+  },
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "41A10",
+      "41A63"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Homogeneous polynomial approximation on symmetric convex bodies",
+      "authors": [
+        "Matthew J. Colbrook"
+      ],
+      "type": "paper",
+      "id": "sha256:70890207abc8b2e842d3bde78e1e834d7c7471ee447c7cfa907a809f71a55a91",
+      "location": "Unpublished manuscript; frozen SHA-256 version and exact scope in docs/SOURCE.md, docs/RESULTS.md and docs/CLAIM_INVENTORY.md. The manuscript itself is not distributed.",
+      "relationship": "formalizes",
+      "note": "Source-based formalization of the thirteen principal conclusions. Several proof routes are replaced by proved alternatives; unused auxiliary assertions and later manuscript revisions are excluded. See docs/VERIFICATION_SCOPE.md."
+    },
+    {
+      "title": "Mathlib4",
+      "type": "other",
+      "id": "https://github.com/leanprover-community/mathlib4/tree/b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+      "relationship": "background",
+      "license": "Apache-2.0",
+      "note": "Pinned background library. Central theorem reuse is attributed in docs/REUSE.md and the exact import inventory."
+    }
+  ],
+  "related_formalizations": [],
+  "status": {
+    "scope": "The thirteen principal conclusions T01--T13 and their conjunction, with genuine mathematical objects and full uniform quantifiers. The self-contained Challenge imports only Mathlib and has fourteen deliberate statement placeholders, excluded from the proof-development sorry_count. No placeholder supports Solution. Several unused original-route auxiliary assertions and the weighted approximation consequence added later to the manuscript are outside scope. The portable Linux workflow is prepared; production Palomar acceptance and independent human peer review are not claimed.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_results": [
+      {
+        "declaration": "VerifiedPaper.t01",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t02",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t03",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t04",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t05",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t06",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t07",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t08",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t09",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t10",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t11",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t12",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "VerifiedPaper.t13",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "comparator_config": "comparator.json",
+        "literature_dependencies": []
+      }
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [],
+        "framework": "Codex",
+        "tool_setup": "Substantial Codex proof construction and independently identified AI reviews; ordinary Mathlib tactics, Lean kernel, bundled Lean Comparator, NanoDa, con-ron and paranoid Lean replay. See docs/AI_ASSISTANCE.md and docs/CHECKING.md.",
+        "cost": {
+          "wall_time": "Multiple development sessions; exact checking UTC times in logs.",
+          "spend_usd": "not tracked",
+          "hardware": "Local Windows x86_64 for the recorded replay; portable Linux CI prepared."
+        },
+        "prompting_notes": "Formalize the complete thirteen principal conclusions faithfully; preserve assumptions, constants, domains, and quantifier order; compare independent Challenge/Solution; allow only propext, Classical.choice, and Quot.sound; report exact scope and actual checks. Prepare a clean repository without modifying the live manuscript or committing or pushing."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "AI systems are disclosed as automated methods, not human authors or maintainers. Exact earlier model revisions were not exposed and are not guessed. No independent human peer review is claimed."
+  },
+  "fidelity": {
+    "divergences": "No weakened principal conclusion or extra mathematical assumption. Equivalent uniform epsilon formulations preserve the full quantifiers. Alternative proof routes and coarser sufficient constants are documented in docs/VERIFICATION_SCOPE.md. Individual unused measure-duality, gradient/mollification, exact radial-integral, sharp square-root normalisation and selected-polynomial nonzeroness claims are not separately certified. Subsequent manuscript edits and the added weighted consequence are outside the frozen source correspondence."
+  },
+  "review": {
+    "status": "agent-reviewed",
+    "reviewers": [
+      "Independent Codex AI statement-fidelity review",
+      "Independent Codex AI proof-trust and reuse review",
+      "Independent Codex AI repository and Palomar requirements reviews"
+    ],
+    "notes": "All reviews are AI reviews. See docs/REVIEWS.md for reviewer involvement, source identities, mathematical fidelity checks and the distinction between source review and actual kernel checking. Current repository replay results are in docs/CHECKING.md and evidence/; historical checks are not substituted for the new comparison."
+  },
+  "alignment": {
+    "namespace": "VerifiedPaper",
+    "statements": [
+      {
+        "source": "Inventory T01",
+        "lean": "VerifiedPaper.t01",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.constant_sequence"
+      },
+      {
+        "source": "Inventory T02",
+        "lean": "VerifiedPaper.t02",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.bounded_norm_uniform"
+      },
+      {
+        "source": "Inventory T03",
+        "lean": "VerifiedPaper.t03",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.consecutive_degrees"
+      },
+      {
+        "source": "Inventory T04",
+        "lean": "VerifiedPaper.t04",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.even_functions"
+      },
+      {
+        "source": "Inventory T05",
+        "lean": "VerifiedPaper.t05",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.odd_functions"
+      },
+      {
+        "source": "Inventory T06",
+        "lean": "VerifiedPaper.t06",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.all_bodies_uniform"
+      },
+      {
+        "source": "Inventory T07",
+        "lean": "VerifiedPaper.t07",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.uniform_gaussian"
+      },
+      {
+        "source": "Inventory T08",
+        "lean": "VerifiedPaper.t08",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.one_sided_density"
+      },
+      {
+        "source": "Inventory T09",
+        "lean": "VerifiedPaper.t09",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.tensor_density"
+      },
+      {
+        "source": "Inventory T10",
+        "lean": "VerifiedPaper.t10",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.fourier_cutoff"
+      },
+      {
+        "source": "Inventory T11",
+        "lean": "VerifiedPaper.t11",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.convex_weighted_gaussian"
+      },
+      {
+        "source": "Inventory T12",
+        "lean": "VerifiedPaper.t12",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.finite_family"
+      },
+      {
+        "source": "Inventory T13",
+        "lean": "VerifiedPaper.t13",
+        "module": "Solution",
+        "status": "proved; see docs/CHECKING.md for the actual repository verification record",
+        "note": "Full source domains, assumptions, constants and quantifier order preserved; underlying closed proof Bandlimited.positive_spherical_quadrature"
+      }
+    ],
+    "inventory": "docs/CLAIM_INVENTORY.md",
+    "scope": "docs/VERIFICATION_SCOPE.md"
+  },
+  "acknowledgements": "Matthew J. Colbrook (mathematical author and responsible maintainer); Mathlib contributors; Lean and Lean Comparator contributors; NanoDa and con-ron developers; OpenAI Codex assistance and AI reviews disclosed in docs/AI_ASSISTANCE.md.",
+  "checking_environment": {
+    "lean": "leanprover/lean4:v4.35.0-rc3",
+    "lean_commit": "470d5ce1400764999581fd26d5d72b00d990b0f4",
+    "mathlib_revision": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+    "palomar_minimum_observed": "v4.35.0-rc2",
+    "policy_checked_date": "2026-10-24",
+    "command_linux": "bash scripts/verify.sh",
+    "record": "docs/CHECKING.md",
+    "production_palomar_verification": false,
+    "local_replay": "evidence/local-replay.json",
+    "source_hashes": "evidence/source-hashes.json",
+    "axioms": "evidence/axioms.txt",
+    "compiled_source_count": 69,
+    "compared_roots": 14,
+    "local_os_sandbox": false,
+    "local_replay_status": "passed",
+    "completed_utc": "2026-10-24T13:35:49.045Z",
+    "checked_by": [
+      "Lean kernel",
+      "NanoDa",
+      "con-ron",
+      "additional paranoid Lean checker"
+    ]
+  }
+}

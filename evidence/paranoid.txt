@@ -1,0 +1,3 @@
+COMMAND: leanchecker-paranoid.exe --silent --from-export <work>\Solution.ndjson
+
+EXIT CODE: 0

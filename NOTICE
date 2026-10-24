@@ -1,0 +1,18 @@
+Homogeneous polynomial approximation on symmetric convex bodies
+Copyright 2026 Matthew J. Colbrook
+
+This repository was prepared with substantial OpenAI Codex assistance.
+
+The development reuses Lean and Mathlib theorem APIs. Mathlib4 is maintained
+by the Lean mathematical community and licensed under Apache-2.0. Its pinned
+source revision and all dependency pins are recorded in lake-manifest.json.
+Dependency source files and copyright notices are not redistributed here.
+
+The portable Comparator verification script follows the PalomarTemplate
+verification procedure, Copyright PalomarRegistry contributors, Apache-2.0.
+Lean's bundled Comparator and filtered-export interfaces are developed by
+Lean FRO and contributors, including Henrik Böving, under Apache-2.0.
+NanoDa and con-ron retain their original licences and attribution.
+
+Cited mathematical papers and the separately maintained manuscript remain
+separate sources; this repository does not grant rights over those works.

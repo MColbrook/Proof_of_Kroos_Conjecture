@@ -1,0 +1,916 @@
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\Definitions.olean Bandlimited/Definitions.lean
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FourierConvention.olean Bandlimited/FourierConvention.lean
+'Bandlimited.inverseFourier_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.inverseFourierSchwartz_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.schwartz_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.inverseFourier_eq_mathlib_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.inverseFourierSchwartz_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SmoothFrequency.inverse_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.inverseFourier_real_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SchwartzCutoff.olean Bandlimited/SchwartzCutoff.lean
+'Bandlimited.compactCutoff_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_hasCompactSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffErrorConstant_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_product_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_error_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_error_seminorm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.scaled_schwartz_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.scaledUnitCutoff_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.scaledUnitCutoff_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_eventuallyEq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_derivative_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.scaledUnitCutoff_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.schwartz_weighted_derivative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.unitCutoffSchwartz_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.unitCutoffSchwartz_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\GaussianSchwartz.olean Bandlimited/GaussianSchwartz.lean
+'Bandlimited.gaussian_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\GaussianFourierNormalization.olean Bandlimited/GaussianFourierNormalization.lean
+'Bandlimited.inverseFourier_gaussianFrequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\GaussianCutoff.olean Bandlimited/GaussianCutoff.lean
+'Bandlimited.fourier_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximationError_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximationError_tends_to_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_frequency_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximation_bandlimited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximation_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximation_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_scale_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximation_error_bdd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximationError_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximationError_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoffApproximationError_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.cutoff_inverse_weighted_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_rescaled_smoothFrequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.compactCutoff_rescaled_bandlimited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_bandlimited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.polynomial_gaussian_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_zero_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_weight_zero_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.constant_one_bandlimited_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_zero_exact_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.finite_dimension_uniform_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_weight_le_integer_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_weight_schwartz_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.frequency_bump_smooth_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.frequency_bump_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.frequency_bump_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SmoothFrequency.mul_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_frequency_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_frequency_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_frequency_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.gaussian_cutoff_inverse_bandlimited' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\TensorDensity.olean Bandlimited/TensorDensity.lean
+'Bandlimited.tensor_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\BandlimitedOperations.olean Bandlimited/BandlimitedOperations.lean
+Bandlimited/BandlimitedOperations.lean:167:15: warning: This simp argument is unused:
+  PiLp.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, Finset.sum_add_distrib, Complex.ofReal_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Bandlimited.InBandlimitedSpace.exists_schwartz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.modulate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\WeightedSchwartz.olean Bandlimited/WeightedSchwartz.lean
+'Bandlimited.WeightedDensity.bandlimited_oneSided_weightedC0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.WeightedDensity.schwartz_real_weight_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.WeightedDensity.schwartz_oneSided_weightedC0' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\WeightedDensityDual.olean Bandlimited/WeightedDensityDual.lean
+Bandlimited/WeightedDensityDual.lean:40:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'Bandlimited.WeightedDensity.dense_submodule_of_dual_annihilator_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\BoundaryUniqueness.olean Bandlimited/BoundaryUniqueness.lean
+'Bandlimited.BoundaryUniqueness.differentiableOn_of_continuousOn_off_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.BoundaryUniqueness.zeroExtension_zero_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BoundaryUniqueness.strip_zero_of_zero_boundary_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.BoundaryUniqueness.real_zero_of_zero_boundary_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\C0Families.olean Bandlimited/C0Families.lean
+Bandlimited/C0Families.lean:52:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'Bandlimited.C0Families.differentiableOn_of_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.C0Families.continuous_of_joint_continuous_uniform_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\LaplaceC0.olean Bandlimited/LaplaceC0.lean
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+'Bandlimited.WeightedDensity.laplaceC0_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.WeightedDensity.laplaceC0_differentiableOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.WeightedDensity.laplaceC0_real_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\LaplaceInversion.olean Bandlimited/LaplaceInversion.lean
+'Bandlimited.WeightedDensity.inversionIntegrand_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.WeightedDensity.weightedSchwartzProduct_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.WeightedDensity.functional_zero_weightedSchwartzProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\C0SmoothDensity.olean Bandlimited/C0SmoothDensity.lean
+'Bandlimited.C0SmoothDensity.exists_compact_schwartz_approx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.C0SmoothDensity.denseRange_schwartzC0' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\C0LocalIdeal.olean Bandlimited/C0LocalIdeal.lean
+Bandlimited/C0LocalIdeal.lean:68:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hpos
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'Bandlimited.C0LocalIdeal.continuous_div_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.C0LocalIdeal.kills_compact_of_local_nonvanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.C0LocalIdeal.functional_zero_of_local_nonvanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\OneSidedDensity.olean Bandlimited/OneSidedDensity.lean
+Bandlimited/OneSidedDensity.lean:40:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.one_sided_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianScalar.olean Bandlimited/ConvexGaussianScalar.lean
+'Bandlimited.ConvexGaussian.scalarWeightedC0_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.oneSided_scalar_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexWeightedGaussian.olean Bandlimited/ConvexWeightedGaussian.lean
+'Bandlimited.ConvexGaussian.profile_affine_minorant_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.profile_constant_on_orthogonal_fibres' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.ConvexGaussian.positive_coordinates_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.profile_supporting_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.slopeCoordinateEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.supporting_weight_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianTarget.olean Bandlimited/ConvexGaussianTarget.lean
+Bandlimited/ConvexGaussianTarget.lean:45:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Bandlimited/ConvexGaussianTarget.lean:45:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Bandlimited/ConvexGaussianTarget.lean:52:46: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Bandlimited/ConvexGaussianTarget.lean:111:10: warning: `continuous_finset_prod` has been deprecated: Use `continuous_finsetProd` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵p̵P̲rod
+'Bandlimited.ConvexGaussian.profile_gaussian_tail_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.active_target_weightedC0' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianActive.olean Bandlimited/ConvexGaussianActive.lean
+Bandlimited/ConvexGaussianActive.lean:59:55: warning: This simp argument is unused:
+  Complex.ofReal_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearEquiv.symm_apply_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Bandlimited.ConvexGaussian.active_tensor_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianGeometry.olean Bandlimited/ConvexGaussianGeometry.lean
+Bandlimited.ConvexGaussian.complementCoordinates {d : ℕ} (S : Submodule ℝ (E d)) : ↥Sᗮ ≃ₗᵢ[ℝ] E (Module.finrank ℝ ↥Sᗮ)
+Bandlimited.ConvexGaussian.activeProjection {d r : ℕ} (S : Submodule ℝ (E d)) (T : ↥S ≃L[ℝ] E r) : E d →L[ℝ] E r
+Bandlimited.ConvexGaussian.complementProjection {d : ℕ} (S : Submodule ℝ (E d)) : E d →L[ℝ] E (Module.finrank ℝ ↥Sᗮ)
+Bandlimited.ConvexGaussian.activeComplementEquiv {d r : ℕ} (S : Submodule ℝ (E d)) (T : ↥S ≃L[ℝ] E r) :
+  E d ≃L[ℝ] E r × E (Module.finrank ℝ ↥Sᗮ)
+Bandlimited.ConvexGaussian.activeComplementEquiv_apply {d r : ℕ} (S : Submodule ℝ (E d)) (T : ↥S ≃L[ℝ] E r) (x : E d) :
+  (activeComplementEquiv S T) x = ((activeProjection S T) x, (complementProjection S) x)
+Bandlimited.ConvexGaussian.active_complement_bijective {d r : ℕ} (S : Submodule ℝ (E d)) (T : ↥S ≃L[ℝ] E r) :
+  Function.Bijective fun x => ((activeProjection S T) x, (complementProjection S) x)
+Bandlimited.ConvexGaussian.norm_complementProjection {d : ℕ} (S : Submodule ℝ (E d)) (x : E d) :
+  ‖(complementProjection S) x‖ = ‖Sᗮ.orthogonalProjectionOnto x‖
+Bandlimited.ConvexGaussian.complementProjection_norm_le {d : ℕ} (S : Submodule ℝ (E d)) : ‖complementProjection S‖ ≤ 1
+Bandlimited.ConvexGaussian.active_complement_dimensions {d : ℕ} (S : Submodule ℝ (E d)) :
+  Module.finrank ℝ ↥S + Module.finrank ℝ ↥Sᗮ = d
+Bandlimited.ConvexGaussian.active_profile_projection {d : ℕ} {f : E d → ℝ} (hf : IsConvexProfile f) (x : E d) :
+  f x = f ↑((activeSubspace f).orthogonalProjectionOnto x)
+Bandlimited.ConvexGaussian.gaussian_orthogonal_factorization {d : ℕ} (S : Submodule ℝ (E d)) (A : ℝ) (x : E d) :
+  gaussian A x = gaussian A ↑(S.orthogonalProjectionOnto x) * gaussian A ((complementProjection S) x)
+'Bandlimited.ConvexGaussian.active_complement_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.active_profile_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.gaussian_orthogonal_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianErrors.olean Bandlimited/ConvexGaussianErrors.lean
+'Bandlimited.ConvexGaussian.weighted_gaussian_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.finite_error_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.weighted_product_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FourierTransport.olean Bandlimited/FourierTransport.lean
+Bandlimited/FourierTransport.lean:198:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.InBandlimitedSpace.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.exists_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.finset_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.real_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.comp_linearIsometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.inverseFourier_conj_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FourierTensor.olean Bandlimited/FourierTensor.lean
+'Bandlimited.InBandlimitedSpace.tensor_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FourierTensor.inverseFourier_productFrequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianAssembly.olean Bandlimited/ConvexGaussianAssembly.lean
+'Bandlimited.ConvexGaussian.tensor_sum_bandlimited' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.ConvexGaussian.real_part_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FourierLinear.olean Bandlimited/FourierLinear.lean
+'Bandlimited.InBandlimitedSpace.comp_linearEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FourierLinear.integral_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FourierLinear.inverseFourier_transportedFrequency' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FourierProduct.olean Bandlimited/FourierProduct.lean
+Bandlimited/FourierProduct.lean:112:22: warning: This simp argument is unused:
+  inv_mul_cancel₀
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pow_add, mul_inv, Complex.ofReal_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Bandlimited.InBandlimitedSpace.mul_comp_of_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.InBandlimitedSpace.product_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FourierProduct.inverseFourier_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianTheorem.olean Bandlimited/ConvexGaussianTheorem.lean
+'Bandlimited.ConvexGaussian.convex_weighted_gaussian_of_one_sided_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FiniteFamily.olean Bandlimited/FiniteFamily.lean
+Bandlimited/FiniteFamily.lean:234:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Bandlimited/FiniteFamily.lean:297:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'Bandlimited.finite_family_of_convex_weighted_gaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.weighted_schwartz_vanishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.gaussianWeight_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.profile_eval_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.weighted_exp_difference_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.profilePred_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.rawProfile_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.FiniteFamily.continuousProfile_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ConvexGaussianClosed.olean Bandlimited/ConvexGaussianClosed.lean
+'Bandlimited.convex_weighted_gaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.finite_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\PolynomialTransport.olean Bandlimited/PolynomialTransport.lean
+Bandlimited/PolynomialTransport.lean:31:10: warning: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Bandlimited.linearSubstitution_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.polynomialPullback_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.polynomialPullback_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\NumericalBounds.olean NumericalBounds.lean
+'Bandlimited.Numerics.exp_one_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_times_chart_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.taylor_geometric_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.bandwidth_times_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.log_two_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.inv_thirty_two_exp_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.inv_sixty_four_exp_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.taylor_log_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Numerics.hyperplane_log_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelTaylor.olean Bandlimited/KernelTaylor.lean
+'Bandlimited.KernelTaylor.fourierTaylorPolynomial_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.fourierTaylor_homogenized' depends on axioms: [propext, Classical.choice, Quot.sound]
+Bandlimited/KernelTaylor.lean:330:43: warning: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.KernelTaylor.fourierTaylor_integral_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Bandlimited/KernelTaylor.lean:499:2: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'Bandlimited.KernelTaylor.approximatingPolynomial_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.approximatingPolynomial_chart_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.KernelTaylor.homogeneousApproximation_homogeneous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.KernelTaylor.homogeneousApproximation_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.homogeneousApproximation_small_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.KernelTaylor.approximation_specification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.complex_taylor_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.small_height_exponential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.homogenized_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.homogenized_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.homogenized_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelTaylor.homogenized_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\FunctionalPolynomial.olean Bandlimited/FunctionalPolynomial.lean
+'Bandlimited.functionalPolynomial_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.functionalPolynomial_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\Rescaling.olean Bandlimited/Rescaling.lean
+'Bandlimited.Rescaling.log_one_add_lower_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Rescaling.log_one_add_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Rescaling.exponent_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.Rescaling.rescaling_ratio_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelScalarEstimates.olean Bandlimited/KernelScalarEstimates.lean
+Bandlimited/KernelScalarEstimates.lean:15:18: warning: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Bandlimited/KernelScalarEstimates.lean:15:31: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Bandlimited/KernelScalarEstimates.lean:52:18: warning: Variable name `hτ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hτ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Bandlimited/KernelScalarEstimates.lean:52:31: warning: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.KernelEstimates.compact_rescaling_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.central_exponential_error_tends_to_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.KernelEstimates.central_ratio_weighted_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\BodyGeometry.olean Bandlimited/BodyGeometry.lean
+'Bandlimited.BodyNorm.frontier_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.radial_surjective_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_error_of_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.one_dimensional_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.oneDimensionalPolynomial_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.oneDimensionalPolynomial_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.zero_dimensional_boundary_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.abs_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.continuous_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.frontier_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SupportingFunctional.olean Bandlimited/SupportingFunctional.lean
+'Bandlimited.BodyNorm.convexOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.supporting_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SupportingChart.olean Bandlimited/SupportingChart.lean
+Bandlimited/SupportingChart.lean:31:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Bandlimited/SupportingChart.lean:112:10: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Bandlimited/SupportingChart.lean:112:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Bandlimited/SupportingChart.lean:173:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.supportProjection_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportProjection_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingProfile_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.orthogonalResidual_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingChart_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\AngularGeometry.olean Bandlimited/AngularGeometry.lean
+'Bandlimited.rho_le_sqrt_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.rho_le_sqrt_two_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.rho_sq_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.residual_sq_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.residual_le_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.rho_le_two_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SupportingHeight.olean Bandlimited/SupportingHeight.lean
+Bandlimited/SupportingHeight.lean:42:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.supportingHeight_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingHeight_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingHeight_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ChartBoundary.olean Bandlimited/ChartBoundary.lean
+Bandlimited/ChartBoundary.lean:86:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.BodyNorm.radial_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.BodyNorm.radial_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingChart_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingChart_radial_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\ChartAngularBounds.olean Bandlimited/ChartAngularBounds.lean
+Bandlimited/ChartAngularBounds.lean:70:34: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Bandlimited.supportingChart_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingChart_angular_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\LocalAngularGaussian.olean Bandlimited/LocalAngularGaussian.lean
+Bandlimited/LocalAngularGaussian.lean:167:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Bandlimited/LocalAngularGaussian.lean:167:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Bandlimited.chart_denominator_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.supportingChart_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.projective_chart_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.exp_neg_arguments_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\LocalAngularError.olean Bandlimited/LocalAngularError.lean
+Bandlimited/LocalAngularError.lean:16:18: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.local_angular_gaussian_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\MainReductions.olean Bandlimited/MainReductions.lean
+'Bandlimited.neg_mem_frontier_of_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.evenPart_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.oddPart_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.evenPart_add_oddPart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_error_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.consecutive_degrees_of_even_and_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.sequence_of_eventual_constant_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.constant_sequence_of_all_bodies_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\PolynomialLifting.olean Bandlimited/PolynomialLifting.lean
+'Bandlimited.eval_homogeneous_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parityComponent_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parityComponent_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parityPolynomial_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parityLift_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_sequence_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parityLift_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_error_parity_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.parity_approximation_of_constant_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.even_functions_of_constant_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.odd_functions_of_constant_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.consecutive_degrees_of_constant_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_polynomial_separates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_polynomial_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelGeometry.olean Bandlimited/KernelGeometry.lean
+'Bandlimited.rho_sphereNeg_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.angularKernelError_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.kernel_error_of_three_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelTails.olean Bandlimited/KernelTails.lean
+Bandlimited/KernelTails.lean:18:62: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.KernelEstimates.polynomial_exponential_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.finite_schwartz_polynomial_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.finite_bandlimited_polynomial_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.KernelEstimates.finite_bandlimited_gaussian_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelWeights.olean Bandlimited/KernelWeights.lean
+Bandlimited/KernelWeights.lean:46:34: warning: Variable name `hM` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hM
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.KernelEstimates.chart_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.chart_gaussian_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.separated_gaussian_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelErrorAssembly.olean Bandlimited/KernelErrorAssembly.lean
+Bandlimited/KernelErrorAssembly.lean:51:18: warning: Variable name `hw₀` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hw₀
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Bandlimited.KernelEstimates.central_real_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.KernelEstimates.outer_real_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\UniformGaussian.olean Bandlimited/UniformGaussian.lean
+'Bandlimited.uniform_gaussian_of_finite_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.uniform_gaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SphericalQuadrature.olean Bandlimited/SphericalQuadrature.lean
+'Bandlimited.SphereQuadrature.finite_positive_integral_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.SphereQuadrature.simultaneous_absolute_quadrature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.SphereQuadrature.simultaneous_relative_quadrature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.SphereQuadrature.sphereMap_measurePreserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.sphericalIntegrals_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.positive_spherical_quadrature_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SphericalCaps.olean Bandlimited/SphericalCaps.lean
+Bandlimited/SphericalCaps.lean:282:29: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+'Bandlimited.SphereQuadrature.cap_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.cap_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.projectiveBall_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.projectiveBall_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.lowerBox_subset_capCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.capCone_subset_upperBox' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.SphereQuadrature.pole_cap_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SphericalEstimates.olean Bandlimited/SphericalEstimates.lean
+'Bandlimited.SphereQuadrature.sphericalTailIntegral_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SphericalGaussian.olean Bandlimited/SphericalGaussian.lean
+'Bandlimited.SphereQuadrature.sphericalGaussianIntegral_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Bandlimited.SphereQuadrature.gaussian_polynomial_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\SphericalTheorem.olean Bandlimited/SphericalTheorem.lean
+'Bandlimited.positive_spherical_quadrature' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\Summation.olean Bandlimited/Summation.lean
+Bandlimited/Summation.lean:76:42: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Bandlimited/Summation.lean:76:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Bandlimited/Summation.lean:76:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\KernelToBoundary.olean Bandlimited/KernelToBoundary.lean
+'Bandlimited.bounded_norm_uniform_of_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.bounded_norm_uniform_large_dimension_of_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\BodyGauge.olean Bandlimited/BodyGauge.lean
+'Bandlimited.symmetric_body_zero_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.symmetric_body_gauge_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.symmetric_body_as_norm_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.constant_sequence_of_bounded_norm_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\MaximalFrame.olean Bandlimited/MaximalFrame.lean
+'Bandlimited.maximal_frame_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.maximal_frame_coefficient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\UniformNormalization.olean Bandlimited/UniformNormalization.lean
+'Bandlimited.frameLinearEquiv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.maximal_frame_norm_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.symmetric_body_uniform_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\UniformBodies.olean Bandlimited/UniformBodies.lean
+'Bandlimited.frontier_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.boundary_error_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.all_bodies_uniform_of_bounded_norm_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited\PrincipalResults.olean Bandlimited/PrincipalResults.lean
+'Bandlimited.constant_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.bounded_norm_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.consecutive_degrees' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.even_functions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.odd_functions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.all_bodies_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.uniform_gaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.one_sided_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.tensor_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.fourier_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.convex_weighted_gaussian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.finite_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.positive_spherical_quadrature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Bandlimited.principal_results' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Bandlimited.olean Bandlimited.lean
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Challenge.olean Challenge.lean
+Challenge.lean:374:8: warning: declaration uses `sorry`
+Challenge.lean:378:8: warning: declaration uses `sorry`
+Challenge.lean:382:8: warning: declaration uses `sorry`
+Challenge.lean:386:8: warning: declaration uses `sorry`
+Challenge.lean:390:8: warning: declaration uses `sorry`
+Challenge.lean:394:8: warning: declaration uses `sorry`
+Challenge.lean:398:8: warning: declaration uses `sorry`
+Challenge.lean:402:8: warning: declaration uses `sorry`
+Challenge.lean:406:8: warning: declaration uses `sorry`
+Challenge.lean:410:8: warning: declaration uses `sorry`
+Challenge.lean:414:8: warning: declaration uses `sorry`
+Challenge.lean:418:8: warning: declaration uses `sorry`
+Challenge.lean:422:8: warning: declaration uses `sorry`
+Challenge.lean:426:8: warning: declaration uses `sorry`
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\Solution.olean Solution.lean
+
+EXIT CODE: 0
+
+
+COMMAND: lean.exe --memory=4096 --threads=2 -o <work>\lib\lean\AxiomReport.olean AxiomReport.lean
+'VerifiedPaper.t01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t02' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t03' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t04' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t05' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t06' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t07' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t08' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t09' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.t13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VerifiedPaper.all_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT CODE: 0

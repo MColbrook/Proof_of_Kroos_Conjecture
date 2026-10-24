@@ -1,0 +1,44 @@
+name: Verify formalization
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Source audit, Lean build and independent kernel replay
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      # Immutable action revisions follow the official PalomarTemplate CI.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Audit the public source package
+        run: python3 scripts/audit.py
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          build: false
+      - name: Enable the Comparator sandbox on this disposable runner
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Verify all advertised statements
+        run: bash scripts/verify.sh
+      - name: Preserve actual checking output
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: verification-output
+          path: .lake/verification/
+          include-hidden-files: true
+          if-no-files-found: warn
